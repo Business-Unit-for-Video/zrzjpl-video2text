@@ -2,5 +2,5 @@ video_id: 570SX2VZY2o
 title: 【核心会员线上会议】 8/23 2026年中共官场四大情妇
 url: https://www.youtube.com/watch?v=570SX2VZY2o
 tab: videos
-time: 2026-08-24 10:24:14
-error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/570SX2VZY2o.%(ext)s', 'https://www.youtube.com/watch?v=570SX2VZY2o'])
+time: 2026-08-24 10:34:05
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/570SX2VZY2o.%(ext)s', 'https://www.youtube.com/watch?v=570SX2VZY2o'])
