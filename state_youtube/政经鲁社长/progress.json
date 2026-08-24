@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/KCq9pC8Iisg.%(ext)s', 'https://www.youtube.com/watch?v=KCq9pC8Iisg'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/iZiWz32cFnc.%(ext)s', 'https://www.youtube.com/watch?v=iZiWz32cFnc'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 137,
-  "queue_index": 6,
-  "updated_at": 1787568682,
-  "updated_at_readable": "2026-08-24 10:51:22",
-  "current_video_id": "KCq9pC8Iisg",
-  "current_title": "马化腾背后的神秘权贵家族究竟是谁？这个权贵家族如何穿越三朝而不倒？腾讯如何赢得了3Q大战这场关键战役？小马哥的三张底牌分别是什么？小马哥与中共权贵家族的联系到底是怎样？为什么腾讯被称为南山必胜客？",
-  "current_url": "https://www.youtube.com/watch?v=KCq9pC8Iisg",
+  "queue_index": 1,
+  "updated_at": 1787568790,
+  "updated_at_readable": "2026-08-24 10:53:10",
+  "current_video_id": "iZiWz32cFnc",
+  "current_title": "谁毁掉了赵薇的所有？谁在操盘赵薇与黄有龙的「杠杆人生」？赵薇三段不了了之的感情是什么？赵薇是许宗衡的情人吗？黄有龙是如何起家？马云是如何在生意上提携赵薇夫妇？黄有龙是如何通过空手盗模式积累财富？",
+  "current_url": "https://www.youtube.com/watch?v=iZiWz32cFnc",
   "current_tab": "videos"
 }
