@@ -1,0 +1,6 @@
+video_id: gTw6V-73PVM
+title: 【核心会员线上会议】 --《亚洲教父》读书会
+url: https://www.youtube.com/watch?v=gTw6V-73PVM
+tab: videos
+time: 2026-08-24 10:28:27
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/gTw6V-73PVM.%(ext)s', 'https://www.youtube.com/watch?v=gTw6V-73PVM'])
