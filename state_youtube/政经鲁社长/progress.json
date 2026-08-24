@@ -1,15 +1,15 @@
 {
-  "status": "error",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/2JV1klyRRBw.%(ext)s', 'https://www.youtube.com/watch?v=2JV1klyRRBw'])",
+  "status": "finished_with_errors",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/KCq9pC8Iisg.%(ext)s', 'https://www.youtube.com/watch?v=KCq9pC8Iisg'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 137,
-  "queue_index": 5,
-  "updated_at": 1787568544,
-  "updated_at_readable": "2026-08-24 10:49:04",
-  "current_video_id": "2JV1klyRRBw",
-  "current_title": "马化腾如何从江泽民家族转向习近平家族？腾讯跟江志成是什么关系？马化腾背后的神秘具乐部是什么？黄坤明为何要收拾腾讯？腾讯和政法系统的关系如何？马化腾如何登上习近平家族的大船？腾讯和阿里,抖音的生死之战",
-  "current_url": "https://www.youtube.com/watch?v=2JV1klyRRBw",
+  "queue_index": 6,
+  "updated_at": 1787568682,
+  "updated_at_readable": "2026-08-24 10:51:22",
+  "current_video_id": "KCq9pC8Iisg",
+  "current_title": "马化腾背后的神秘权贵家族究竟是谁？这个权贵家族如何穿越三朝而不倒？腾讯如何赢得了3Q大战这场关键战役？小马哥的三张底牌分别是什么？小马哥与中共权贵家族的联系到底是怎样？为什么腾讯被称为南山必胜客？",
+  "current_url": "https://www.youtube.com/watch?v=KCq9pC8Iisg",
   "current_tab": "videos"
 }
