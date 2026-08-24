@@ -1,15 +1,15 @@
 {
   "status": "error",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/IdiTl1l-RqM.%(ext)s', 'https://www.youtube.com/watch?v=IdiTl1l-RqM'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/2JV1klyRRBw.%(ext)s', 'https://www.youtube.com/watch?v=2JV1klyRRBw'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 137,
-  "queue_index": 4,
-  "updated_at": 1787568466,
-  "updated_at_readable": "2026-08-24 10:47:46",
-  "current_video_id": "IdiTl1l-RqM",
-  "current_title": "吴亦凡为何成为改开后下场最惨的顶流明星？他究竟有没有犯罪？他究竟招惹了哪些权贵？究竟是哪些力量让他登上了人生巅峰？他和成龙之间有哪些解不开的渊源？王一博为什么度过了三次绯闻危机？",
-  "current_url": "https://www.youtube.com/watch?v=IdiTl1l-RqM",
+  "queue_index": 5,
+  "updated_at": 1787568544,
+  "updated_at_readable": "2026-08-24 10:49:04",
+  "current_video_id": "2JV1klyRRBw",
+  "current_title": "马化腾如何从江泽民家族转向习近平家族？腾讯跟江志成是什么关系？马化腾背后的神秘具乐部是什么？黄坤明为何要收拾腾讯？腾讯和政法系统的关系如何？马化腾如何登上习近平家族的大船？腾讯和阿里,抖音的生死之战",
+  "current_url": "https://www.youtube.com/watch?v=2JV1klyRRBw",
   "current_tab": "videos"
 }
