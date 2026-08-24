@@ -1,15 +1,15 @@
 {
   "status": "error",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/iZiWz32cFnc.%(ext)s', 'https://www.youtube.com/watch?v=iZiWz32cFnc'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/qn3WaT0wITs.%(ext)s', 'https://www.youtube.com/watch?v=qn3WaT0wITs'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 137,
-  "queue_index": 1,
-  "updated_at": 1787568130,
-  "updated_at_readable": "2026-08-24 10:42:10",
-  "current_video_id": "iZiWz32cFnc",
-  "current_title": "谁毁掉了赵薇的所有？谁在操盘赵薇与黄有龙的「杠杆人生」？赵薇三段不了了之的感情是什么？赵薇是许宗衡的情人吗？黄有龙是如何起家？马云是如何在生意上提携赵薇夫妇？黄有龙是如何通过空手盗模式积累财富？",
-  "current_url": "https://www.youtube.com/watch?v=iZiWz32cFnc",
+  "queue_index": 3,
+  "updated_at": 1787568210,
+  "updated_at_readable": "2026-08-24 10:43:30",
+  "current_video_id": "qn3WaT0wITs",
+  "current_title": "彭丽媛的隐秘派系究竟是什么来头？李鹏怎么建立电力帮？朱镕基和温家宝如何瓦解李鹏的电力王国？鲁能私有化背后的曾庆红家族；电力山东帮如何投靠彭丽媛？为何电力山东帮能从反腐中生还？彭丽媛培养了哪些70后高官",
+  "current_url": "https://www.youtube.com/watch?v=qn3WaT0wITs",
   "current_tab": "videos"
 }
