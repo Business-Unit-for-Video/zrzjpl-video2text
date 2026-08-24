@@ -107,6 +107,11 @@ jobs:
           EOF
           test -s youtube_cookies.txt || (echo "YOUTUBE_SOURCE_COOKIE_FILE_VIDEO2TEXT is unavailable" && exit 1)
 
+      - name: Normalize cookie export
+        shell: bash
+        run: |
+          python scripts/normalize_youtube_cookies.py youtube_cookies.txt
+
       - name: Validate cookie format
         shell: bash
         run: |
