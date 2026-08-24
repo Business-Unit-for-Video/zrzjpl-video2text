@@ -35,6 +35,11 @@ TRANSCRIBE_CHUNKED = os.getenv("TRANSCRIBE_CHUNKED", "0").strip().lower() in {"1
 MAX_TRAILING_GAP_SECONDS = float(os.getenv("MAX_TRAILING_GAP_SECONDS", "120"))
 MAX_TRAILING_GAP_RATIO = float(os.getenv("MAX_TRAILING_GAP_RATIO", "0.10"))
 
+MEMBERSHIP_TITLE_RE = re.compile(
+    r"(?:会员|member(?:s)?[- ]only|join this channel|members?[- ]exclusive)",
+    re.IGNORECASE,
+)
+
 INCLUDE_MEMBERS = str(os.getenv("YOUTUBE_INCLUDE_MEMBERS", "false")).strip().lower() in {"1", "true", "yes", "on"}
 FORCE_RETRANSCRIBE = str(os.getenv("FORCE_RETRANSCRIBE", "false")).strip().lower() in {"1", "true", "yes", "on"}
 GIT_BRANCH = os.getenv("GITHUB_REF_NAME", "").strip()
@@ -307,7 +312,16 @@ def build_item_from_entry(entry: Dict, tab: str) -> Optional[Dict]:
         "url": url,
         "tab": tab,
         "duration": entry.get("duration"),
+        "availability": entry.get("availability"),
     }
+
+
+def is_members_only(item: Dict) -> bool:
+    """Conservatively exclude membership-only entries from a public queue."""
+    availability = str(item.get("availability") or "").strip().lower()
+    if availability in {"private", "needs_auth", "subscriber_only", "premium_only", "needs_subscription"}:
+        return True
+    return bool(MEMBERSHIP_TITLE_RE.search(str(item.get("title") or "")))
 
 
 def extract_queue_from_channel() -> List[Dict]:
@@ -318,12 +332,16 @@ def extract_queue_from_channel() -> List[Dict]:
     streams_entries = fetch_tab_entries(f"{base}/streams", use_cookies=use_cookies_for_listing)
 
     queue = []
+    excluded_members = 0
     seen = set()
 
     for tab, entries in [("videos", videos_entries), ("streams", streams_entries)]:
         for entry in entries:
             item = build_item_from_entry(entry, tab)
             if not item:
+                continue
+            if not INCLUDE_MEMBERS and is_members_only(item):
+                excluded_members += 1
                 continue
             if item["id"] in seen:
                 continue
@@ -333,6 +351,8 @@ def extract_queue_from_channel() -> List[Dict]:
     if not queue:
         raise RuntimeError("queue is empty")
 
+    if excluded_members:
+        log(f"[info] excluded membership-only entries: {excluded_members}")
     return queue
 
 

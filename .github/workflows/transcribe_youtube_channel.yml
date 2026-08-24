@@ -263,8 +263,9 @@ jobs:
               -f channel_url="${YOUTUBE_CHANNEL_URL}" \
               -f destination="${DESTINATION}" \
               -f include_members="${YOUTUBE_INCLUDE_MEMBERS}" \
+              -f output_root="${OUTPUT_ROOT}" \
               -f whisper_model="${WHISPER_MODEL}" \
-              -f force_retranscribe="${FORCE_RETRANSCRIBE}"
+              -f force_retranscribe="false"
           else
             echo "continue.flag not found, stop here"
           fi
