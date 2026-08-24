@@ -28,6 +28,11 @@ INITIAL_PROMPT = os.getenv("WHISPER_INITIAL_PROMPT", "").strip()
 
 AUDIO_FORMAT = os.getenv("AUDIO_FORMAT", "mp3")
 AUDIO_QUALITY = os.getenv("AUDIO_QUALITY", "7")
+YOUTUBE_FALLBACK_CLIENTS = [
+    client.strip()
+    for client in os.getenv("YOUTUBE_FALLBACK_CLIENTS", "web_embedded,tv_embedded,android_vr").split(",")
+    if client.strip()
+]
 BEAM_SIZE = int(os.getenv("BEAM_SIZE", "1"))
 VAD_FILTER = os.getenv("VAD_FILTER", "1") in {"1", "true", "True"}
 TRANSCRIBE_CHUNK_SECONDS = int(os.getenv("TRANSCRIBE_CHUNK_SECONDS", "1800"))
@@ -405,9 +410,9 @@ def download_audio(video_url: str, video_id: str) -> Path:
         raise ValueError(f"invalid cleaned url for {video_id}: {video_url}")
 
     outtmpl = str(TMP_DIR / f"{video_id}.%(ext)s")
-    cmd = ["yt-dlp", "--remote-components", "ejs:github"]
-    add_cookie_arg(cmd)
-    cmd.extend([
+    base_cmd = ["yt-dlp", "--remote-components", "ejs:github"]
+    add_cookie_arg(base_cmd)
+    download_args = [
         "--no-playlist",
         "-f", "ba/bestaudio",
         "-x",
@@ -415,8 +420,26 @@ def download_audio(video_url: str, video_id: str) -> Path:
         "--audio-quality", AUDIO_QUALITY,
         "-o", outtmpl,
         video_url
-    ])
-    run(cmd)
+    ]
+    cmd = base_cmd + download_args
+    try:
+        run(cmd)
+    except subprocess.CalledProcessError as first_error:
+        # GitHub-hosted IPs can be challenged by YouTube even for public
+        # videos. Try a small set of documented public clients before failing.
+        for client in YOUTUBE_FALLBACK_CLIENTS:
+            fallback_cmd = ["yt-dlp", "--remote-components", "ejs:github"]
+            add_cookie_arg(fallback_cmd)
+            fallback_cmd.extend(["--extractor-args", f"youtube:player_client={client}"])
+            fallback_cmd.extend(download_args)
+            log(f"[warn] default YouTube client failed; retrying player client: {client}")
+            try:
+                run(fallback_cmd)
+                break
+            except subprocess.CalledProcessError:
+                continue
+        else:
+            raise first_error
 
     files = [p for p in TMP_DIR.glob(f"{video_id}.*") if p.is_file() and not p.name.endswith(".part")]
     if not files:
