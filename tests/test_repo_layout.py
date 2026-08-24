@@ -12,6 +12,8 @@ def test_default_channel_is_zrzjpl() -> None:
     assert "https://www.youtube.com/@zrzjpl" in workflow
     assert "政经鲁社长" in workflow
     assert "YOUTUBE_SOURCE_COOKIE_FILE_VIDEO2TEXT" in workflow
+    assert "Cookie normalization status" in workflow
+    assert "force_retranscribe=\"false\"" in workflow
 
 
 def test_cookie_normalizer_converts_browser_json(tmp_path) -> None:

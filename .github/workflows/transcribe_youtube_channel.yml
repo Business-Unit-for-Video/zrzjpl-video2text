@@ -111,7 +111,15 @@ jobs:
       - name: Normalize cookie export
         shell: bash
         run: |
-          python scripts/normalize_youtube_cookies.py youtube_cookies.txt
+          cookie_status=$(python scripts/normalize_youtube_cookies.py youtube_cookies.txt)
+          echo "Cookie normalization status: ${cookie_status}"
+          case "${cookie_status}" in
+            netscape|netscape-data:*|converted-json:*|converted-header:*) ;;
+            *)
+              echo "YOUTUBE_SOURCE_COOKIE_FILE_VIDEO2TEXT must be a Netscape export, browser JSON/JSONL, or Cookie: header"
+              exit 1
+              ;;
+          esac
 
       - name: Validate cookie format
         shell: bash
