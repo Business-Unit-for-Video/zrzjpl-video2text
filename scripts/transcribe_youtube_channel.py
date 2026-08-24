@@ -548,24 +548,17 @@ def main():
         failed.add(next_item["id"])
         write_error_file(next_item, e)
 
-        if has_more_pending(queue, done, failed):
-            touch_continue()
-            save_progress(
-                "error",
-                note=repr(e),
-                current=next_item,
-                queue_total=len(queue),
-                queue_index=idx + 1
-            )
-        else:
-            clear_continue()
-            save_progress(
-                "finished_with_errors",
-                note=repr(e),
-                current=next_item,
-                queue_total=len(queue),
-                queue_index=idx + 1
-            )
+        # Stop after a failed download/transcription. Automatic continuation
+        # would repeatedly hit the same platform/authentication problem on
+        # every pending video and can create an unbounded Actions chain.
+        clear_continue()
+        save_progress(
+            "finished_with_errors",
+            note=repr(e),
+            current=next_item,
+            queue_total=len(queue),
+            queue_index=idx + 1
+        )
 
         git_commit_and_push(f"youtube: failed {DESTINATION} {next_item['id']}")
         log(f"[error] {next_item['id']}: {e}")

@@ -38,3 +38,15 @@ def test_cookie_normalizer_converts_request_header(tmp_path) -> None:
 
     assert normalize(cookie_file) == "converted-header:2"
     assert "\tSID\tredacted" in cookie_file.read_text(encoding="utf-8")
+
+
+def test_cookie_normalizer_converts_python_literal(tmp_path) -> None:
+    from scripts.normalize_youtube_cookies import normalize
+
+    cookie_file = tmp_path / "cookies.txt"
+    cookie_file.write_text(
+        "[{'domain': '.youtube.com', 'name': 'SID', 'value': 'redacted', 'path': '/'}]",
+        encoding="utf-8",
+    )
+
+    assert normalize(cookie_file) == "converted-json:1"

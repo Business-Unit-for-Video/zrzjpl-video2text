@@ -3,6 +3,8 @@
 import json
 import math
 import sys
+import ast
+import urllib.parse
 from pathlib import Path
 from typing import Any, Dict, Iterable
 
@@ -70,24 +72,39 @@ def normalize(path: Path) -> str:
     try:
         data = json.loads(raw)
     except json.JSONDecodeError:
-        # A browser's request-header copy is not a formal export, but can be
-        # normalized when it contains recognizable YouTube cookie names.
-        header = raw.strip()
-        if header.lower().startswith("cookie:"):
-            header = header.split(":", 1)[1].strip()
-        pairs = []
-        for part in header.split(";"):
-            if "=" not in part:
-                continue
-            name, value = part.strip().split("=", 1)
-            if name in COOKIE_HEADER_NAMES and value:
-                pairs.append((name, value))
-        if pairs:
-            lines = ["# Netscape HTTP Cookie File", "# Converted from a Cookie request header on the runner."]
-            lines.extend(f".youtube.com\tTRUE\t/\tTRUE\t0\t{name}\t{value}" for name, value in pairs)
-            path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
-            return f"converted-header:{len(pairs)}"
-        return "unsupported"
+        try:
+            data = ast.literal_eval(raw)
+        except (SyntaxError, ValueError):
+            data = None
+        if data is not None:
+            # Continue through the same browser-export handling below.
+            pass
+        else:
+            decoded = urllib.parse.unquote(raw).strip()
+            if decoded != raw:
+                try:
+                    data = json.loads(decoded)
+                except json.JSONDecodeError:
+                    data = None
+        if data is None:
+            # A browser's request-header copy is not a formal export, but can be
+            # normalized when it contains recognizable YouTube cookie names.
+            header = raw.strip()
+            if header.lower().startswith("cookie:"):
+                header = header.split(":", 1)[1].strip()
+            pairs = []
+            for part in header.split(";"):
+                if "=" not in part:
+                    continue
+                name, value = part.strip().split("=", 1)
+                if name in COOKIE_HEADER_NAMES and value:
+                    pairs.append((name, value))
+            if pairs:
+                lines = ["# Netscape HTTP Cookie File", "# Converted from a Cookie request header on the runner."]
+                lines.extend(f".youtube.com\tTRUE\t/\tTRUE\t0\t{name}\t{value}" for name, value in pairs)
+                path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+                return f"converted-header:{len(pairs)}"
+            return "unsupported"
 
     # A JSON secret can itself contain a JSON string, or be newline-delimited
     # cookie objects. Both forms are common in browser export tools.
