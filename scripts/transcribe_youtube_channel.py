@@ -131,6 +131,39 @@ def load_set(path: Path) -> set:
     return {x.strip() for x in path.read_text(encoding="utf-8").splitlines() if x.strip()}
 
 
+def cookie_file_is_netscape(path: Path) -> bool:
+    """Return whether a cookie export has the format yt-dlp can read."""
+    if not path.exists() or path.stat().st_size == 0:
+        return False
+    try:
+        with path.open("r", encoding="utf-8-sig", errors="replace") as handle:
+            for line in handle:
+                line = line.strip()
+                if not line:
+                    continue
+                return line.startswith("# Netscape HTTP Cookie File") or line.startswith("# HTTP Cookie File")
+    except OSError:
+        return False
+    return False
+
+
+_invalid_cookie_warning_shown = False
+
+
+def add_cookie_arg(cmd: List[str], enabled: bool = True) -> bool:
+    """Add a cookie argument only for a valid Netscape cookie export."""
+    global _invalid_cookie_warning_shown
+    if not enabled:
+        return False
+    if cookie_file_is_netscape(COOKIES_FILE):
+        cmd.extend(["--cookies", str(COOKIES_FILE)])
+        return True
+    if COOKIES_FILE.exists() and not _invalid_cookie_warning_shown:
+        log("[warn] cookie file is not Netscape format; ignoring it and continuing without cookies")
+        _invalid_cookie_warning_shown = True
+    return False
+
+
 def run(cmd: List[str], capture: bool = False, check: bool = True):
     log("[cmd] " + " ".join(cmd))
     if capture:
@@ -206,6 +239,15 @@ def record_failed(video_id: str):
         append_line(FAILED_FILE, video_id)
 
 
+def clear_failed(video_id: str):
+    """Remove a recovered video from the durable failed list."""
+    failed = load_set(FAILED_FILE)
+    if video_id not in failed:
+        return
+    remaining = sorted(failed - {video_id})
+    atomic_write_text(FAILED_FILE, ("\n".join(remaining) + "\n") if remaining else "")
+
+
 def write_error_file(item: Dict, err: Exception):
     path = ERRORS_DIR / f"{item['id']}.txt"
     body = (
@@ -222,8 +264,7 @@ def write_error_file(item: Dict, err: Exception):
 def fetch_tab_entries(tab_url: str, use_cookies: bool) -> List[Dict]:
     tab_url = clean_url(tab_url)
     cmd = ["yt-dlp", "--remote-components", "ejs:github"]
-    if use_cookies and COOKIES_FILE.exists():
-        cmd.extend(["--cookies", str(COOKIES_FILE)])
+    add_cookie_arg(cmd, enabled=use_cookies)
     cmd.extend(["--flat-playlist", "--dump-single-json", tab_url])
 
     result = subprocess.run(cmd, text=True, capture_output=True)
@@ -322,7 +363,8 @@ def is_item_completed(item: Dict) -> bool:
 def find_next_item(queue: List[Dict], done: set, failed: set) -> Optional[Dict]:
     for item in queue:
         vid = item["id"]
-        if vid in done or vid in failed or (not FORCE_RETRANSCRIBE and is_item_completed(item)):
+        # A manual retry may revisit failed items, but never reprocesses a completed item.
+        if vid in done or (vid in failed and not FORCE_RETRANSCRIBE) or is_item_completed(item):
             continue
         return item
     return None
@@ -344,8 +386,7 @@ def download_audio(video_url: str, video_id: str) -> Path:
 
     outtmpl = str(TMP_DIR / f"{video_id}.%(ext)s")
     cmd = ["yt-dlp", "--remote-components", "ejs:github"]
-    if COOKIES_FILE.exists():
-        cmd.extend(["--cookies", str(COOKIES_FILE)])
+    add_cookie_arg(cmd)
     cmd.extend([
         "--no-playlist",
         "-f", "ba/bestaudio",
@@ -456,7 +497,9 @@ def main():
         write_outputs(next_item, result)
 
         record_done(next_item["id"])
+        clear_failed(next_item["id"])
         done.add(next_item["id"])
+        failed.discard(next_item["id"])
 
         if has_more_pending(queue, done, failed):
             touch_continue()

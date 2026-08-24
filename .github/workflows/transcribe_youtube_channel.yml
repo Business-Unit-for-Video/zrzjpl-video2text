@@ -29,7 +29,7 @@ on:
         default: "medium"
         type: string
       force_retranscribe:
-        description: "忽略既有完成状态和输出，重新转写全部视频"
+        description: "允许重试失败项目（已完成项目仍会跳过）"
         required: false
         default: false
         type: boolean
@@ -106,6 +106,16 @@ jobs:
           ${{ secrets.YOUTUBE_SOURCE_COOKIE_FILE_VIDEO2TEXT }}
           EOF
           test -s youtube_cookies.txt || (echo "YOUTUBE_SOURCE_COOKIE_FILE_VIDEO2TEXT is unavailable" && exit 1)
+
+      - name: Validate cookie format
+        shell: bash
+        run: |
+          first_line=$(sed -n '/[^[:space:]]/ {p; q;}' youtube_cookies.txt || true)
+          if [[ "$first_line" == "# Netscape HTTP Cookie File"* || "$first_line" == "# HTTP Cookie File"* ]]; then
+            echo "Cookie export format: Netscape"
+          else
+            echo "Cookie export format: unsupported; public-video downloads will continue without cookies"
+          fi
 
       - name: Validate inputs
         shell: bash
@@ -190,10 +200,13 @@ jobs:
       - name: Probe one known video format
         shell: bash
         run: |
-          yt-dlp -vU \
-            --remote-components ejs:github \
-            --cookies youtube_cookies.txt \
-            -F "https://www.youtube.com/watch?v=iZiWz32cFnc" || true
+          first_line=$(sed -n '/[^[:space:]]/ {p; q;}' youtube_cookies.txt || true)
+          probe_args=(yt-dlp -vU --remote-components ejs:github)
+          if [[ "$first_line" == "# Netscape HTTP Cookie File"* || "$first_line" == "# HTTP Cookie File"* ]]; then
+            probe_args+=(--cookies youtube_cookies.txt)
+          fi
+          probe_args+=(-F "https://www.youtube.com/watch?v=iZiWz32cFnc")
+          "${probe_args[@]}" || true
 
       - name: Run one video
         run: |
