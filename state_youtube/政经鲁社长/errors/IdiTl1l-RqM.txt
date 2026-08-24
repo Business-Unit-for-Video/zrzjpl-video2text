@@ -1,0 +1,6 @@
+video_id: IdiTl1l-RqM
+title: 吴亦凡为何成为改开后下场最惨的顶流明星？他究竟有没有犯罪？他究竟招惹了哪些权贵？究竟是哪些力量让他登上了人生巅峰？他和成龙之间有哪些解不开的渊源？王一博为什么度过了三次绯闻危机？
+url: https://www.youtube.com/watch?v=IdiTl1l-RqM
+tab: videos
+time: 2026-08-24 10:47:46
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/IdiTl1l-RqM.%(ext)s', 'https://www.youtube.com/watch?v=IdiTl1l-RqM'])

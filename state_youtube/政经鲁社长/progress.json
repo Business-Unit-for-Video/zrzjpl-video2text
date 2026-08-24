@@ -1,15 +1,15 @@
 {
   "status": "error",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/iZiWz32cFnc.%(ext)s', 'https://www.youtube.com/watch?v=iZiWz32cFnc'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/IdiTl1l-RqM.%(ext)s', 'https://www.youtube.com/watch?v=IdiTl1l-RqM'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 137,
-  "queue_index": 1,
-  "updated_at": 1787568385,
-  "updated_at_readable": "2026-08-24 10:46:25",
-  "current_video_id": "iZiWz32cFnc",
-  "current_title": "谁毁掉了赵薇的所有？谁在操盘赵薇与黄有龙的「杠杆人生」？赵薇三段不了了之的感情是什么？赵薇是许宗衡的情人吗？黄有龙是如何起家？马云是如何在生意上提携赵薇夫妇？黄有龙是如何通过空手盗模式积累财富？",
-  "current_url": "https://www.youtube.com/watch?v=iZiWz32cFnc",
+  "queue_index": 4,
+  "updated_at": 1787568466,
+  "updated_at_readable": "2026-08-24 10:47:46",
+  "current_video_id": "IdiTl1l-RqM",
+  "current_title": "吴亦凡为何成为改开后下场最惨的顶流明星？他究竟有没有犯罪？他究竟招惹了哪些权贵？究竟是哪些力量让他登上了人生巅峰？他和成龙之间有哪些解不开的渊源？王一博为什么度过了三次绯闻危机？",
+  "current_url": "https://www.youtube.com/watch?v=IdiTl1l-RqM",
   "current_tab": "videos"
 }
