@@ -7,10 +7,20 @@ from pathlib import Path
 from typing import Any, Dict, Iterable
 
 
+COOKIE_HEADER_NAMES = {
+    "SID", "HSID", "SSID", "APISID", "SAPISID", "PSID", "LOGIN_INFO",
+    "PREF", "VISITOR_INFO1_LIVE", "VISITOR_PRIVACY_METADATA", "YSC", "SOCS",
+    "CONSENT", "GPS", "SIDCC", "__Secure-1PSID", "__Secure-3PSID",
+    "__Secure-1PSIDTS", "__Secure-3PSIDTS",
+}
+
+
 def _cookie_items(data: Any) -> Iterable[Dict[str, Any]]:
     if isinstance(data, list):
         return (item for item in data if isinstance(item, dict))
     if isinstance(data, dict):
+        if data.get("name") and (data.get("domain") or data.get("host")):
+            return (data,)
         for key in ("cookies", "items", "entries"):
             value = data.get(key)
             if isinstance(value, list):
@@ -31,14 +41,71 @@ def _expiry(cookie: Dict[str, Any]) -> str:
 
 def normalize(path: Path) -> str:
     raw = path.read_text(encoding="utf-8-sig", errors="replace")
-    first_line = next((line.strip() for line in raw.splitlines() if line.strip()), "")
-    if first_line.startswith("# Netscape HTTP Cookie File") or first_line.startswith("# HTTP Cookie File"):
+    raw_lines = raw.splitlines()
+    header_index = next(
+        (
+            index
+            for index, line in enumerate(raw_lines)
+            if line.strip().startswith("# Netscape HTTP Cookie File")
+            or line.strip().startswith("# HTTP Cookie File")
+        ),
+        None,
+    )
+    if header_index is not None:
+        # yt-dlp expects the Netscape marker to be the first meaningful line.
+        normalized_lines = raw_lines[header_index:]
+        path.write_text("\n".join(normalized_lines).rstrip() + "\n", encoding="utf-8", newline="\n")
         return "netscape"
+
+    # Some exporters omit the marker but still emit valid tab-separated rows.
+    tab_rows = [line for line in raw_lines if line.strip() and not line.lstrip().startswith("#") and len(line.split("\t")) >= 7]
+    if tab_rows:
+        path.write_text(
+            "# Netscape HTTP Cookie File\n" + "\n".join(tab_rows) + "\n",
+            encoding="utf-8",
+            newline="\n",
+        )
+        return f"netscape-data:{len(tab_rows)}"
 
     try:
         data = json.loads(raw)
     except json.JSONDecodeError:
+        # A browser's request-header copy is not a formal export, but can be
+        # normalized when it contains recognizable YouTube cookie names.
+        header = raw.strip()
+        if header.lower().startswith("cookie:"):
+            header = header.split(":", 1)[1].strip()
+        pairs = []
+        for part in header.split(";"):
+            if "=" not in part:
+                continue
+            name, value = part.strip().split("=", 1)
+            if name in COOKIE_HEADER_NAMES and value:
+                pairs.append((name, value))
+        if pairs:
+            lines = ["# Netscape HTTP Cookie File", "# Converted from a Cookie request header on the runner."]
+            lines.extend(f".youtube.com\tTRUE\t/\tTRUE\t0\t{name}\t{value}" for name, value in pairs)
+            path.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
+            return f"converted-header:{len(pairs)}"
         return "unsupported"
+
+    # A JSON secret can itself contain a JSON string, or be newline-delimited
+    # cookie objects. Both forms are common in browser export tools.
+    if isinstance(data, str):
+        try:
+            data = json.loads(data)
+        except json.JSONDecodeError:
+            data = None
+    if data is None:
+        objects = []
+        for line in raw_lines:
+            try:
+                item = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if isinstance(item, dict):
+                objects.append(item)
+        data = objects
 
     lines = ["# Netscape HTTP Cookie File", "# This file was normalized on the ephemeral GitHub Actions runner."]
     converted = 0

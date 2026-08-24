@@ -28,3 +28,13 @@ def test_cookie_normalizer_converts_browser_json(tmp_path) -> None:
     lines = cookie_file.read_text(encoding="utf-8").splitlines()
     assert lines[0] == "# Netscape HTTP Cookie File"
     assert lines[2].startswith(".youtube.com\tTRUE\t/\tTRUE\t1700000000\tSID\t")
+
+
+def test_cookie_normalizer_converts_request_header(tmp_path) -> None:
+    from scripts.normalize_youtube_cookies import normalize
+
+    cookie_file = tmp_path / "cookies.txt"
+    cookie_file.write_text("Cookie: SID=redacted; SAPISID=also-redacted", encoding="utf-8")
+
+    assert normalize(cookie_file) == "converted-header:2"
+    assert "\tSID\tredacted" in cookie_file.read_text(encoding="utf-8")
