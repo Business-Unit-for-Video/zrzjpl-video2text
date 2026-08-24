@@ -1,0 +1,6 @@
+video_id: b_mCKKwOoSg
+title: 【核心会员线上会议】 8/16 集中答疑
+url: https://www.youtube.com/watch?v=b_mCKKwOoSg
+tab: videos
+time: 2026-08-24 10:25:40
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/b_mCKKwOoSg.%(ext)s', 'https://www.youtube.com/watch?v=b_mCKKwOoSg'])
