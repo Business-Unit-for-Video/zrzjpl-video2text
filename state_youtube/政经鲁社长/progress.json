@@ -1,15 +1,15 @@
 {
-  "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['git', 'push', 'origin', 'HEAD:main'])",
+  "status": "done_one",
+  "note": "one video processed, more pending",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 137,
-  "queue_index": 27,
-  "updated_at": 1787655473,
-  "updated_at_readable": "2026-08-25 10:57:53",
-  "current_video_id": "e0wfffamSw0",
-  "current_title": "航天系袁家军会否受到马兴瑞的牵连而落马？袁家军如何打通习近平的渠道以及超越马兴瑞？重庆魔咒的深层原因究竟是什么？袁家军和航天系的最终命运是？｜袁家军｜马兴瑞｜张庆伟｜王勇｜江绵恒｜习近平｜",
-  "current_url": "https://www.youtube.com/watch?v=e0wfffamSw0",
+  "queue_index": 28,
+  "updated_at": 1787665325,
+  "updated_at_readable": "2026-08-25 13:42:05",
+  "current_video_id": "_VSNamBo3cw",
+  "current_title": "习远平的儿子和儿媳妇是谁？习远平亲家的特异功能是真的吗？副总理刘国中怎么样攀上习远平？马云怎么样安全落地？科兴疫苗怎么拿下来批文？正大收购平安的内幕｜肖建华｜马云｜谢国民｜习近平｜刘国中｜齐明正",
+  "current_url": "https://www.youtube.com/watch?v=_VSNamBo3cw",
   "current_tab": "videos"
 }
