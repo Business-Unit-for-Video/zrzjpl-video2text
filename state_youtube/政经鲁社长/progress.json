@@ -1,15 +1,15 @@
 {
-  "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/iZiWz32cFnc.%(ext)s', 'https://www.youtube.com/watch?v=iZiWz32cFnc'])",
+  "status": "done_one",
+  "note": "one video processed, more pending",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 137,
-  "queue_index": 1,
-  "updated_at": 1787568790,
-  "updated_at_readable": "2026-08-24 10:53:10",
-  "current_video_id": "iZiWz32cFnc",
-  "current_title": "谁毁掉了赵薇的所有？谁在操盘赵薇与黄有龙的「杠杆人生」？赵薇三段不了了之的感情是什么？赵薇是许宗衡的情人吗？黄有龙是如何起家？马云是如何在生意上提携赵薇夫妇？黄有龙是如何通过空手盗模式积累财富？",
-  "current_url": "https://www.youtube.com/watch?v=iZiWz32cFnc",
+  "queue_index": 7,
+  "updated_at": 1787625003,
+  "updated_at_readable": "2026-08-25 02:30:03",
+  "current_video_id": "eqaxMaNZjxo",
+  "current_title": "（重新发布）马杰克是如何与习近平达成世纪大和解？为何马杰克曾令伟大领袖不高兴？马杰克的企业家盟友究竟是谁？马杰克的三场战争是如何发生？｜习近平｜肖建华｜赵薇｜黄有龙｜栗战书｜李强｜蔡奇｜特朗普｜",
+  "current_url": "https://www.youtube.com/watch?v=eqaxMaNZjxo",
   "current_tab": "videos"
 }
