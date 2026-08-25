@@ -108,6 +108,31 @@ jobs:
           EOF
           test -s youtube_cookies.txt || (echo "YOUTUBE_SOURCE_COOKIE_FILE_VIDEO2TEXT is unavailable" && exit 1)
 
+      - name: Inspect cookie envelope
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          data = Path("youtube_cookies.txt").read_bytes()
+          lines = data.decode("utf-8-sig", errors="replace").splitlines()
+          nonempty = [line for line in lines if line.strip()]
+          tab_rows = [line for line in nonempty if not line.lstrip().startswith("#") and len(line.split("\t")) >= 7]
+          first = nonempty[0].strip().lower() if nonempty else ""
+          if first.startswith("# netscape http cookie file") or first.startswith("# http cookie file"):
+              kind = "netscape"
+          elif first.startswith("{") or first.startswith("["):
+              kind = "json-like"
+          elif first.startswith("cookie:"):
+              kind = "request-header"
+          else:
+              kind = "other"
+          print(f"Cookie envelope bytes: {len(data)}")
+          print(f"Cookie envelope lines: {len(lines)}")
+          print(f"Cookie envelope nonempty lines: {len(nonempty)}")
+          print(f"Cookie envelope tab rows: {len(tab_rows)}")
+          print(f"Cookie envelope kind: {kind}")
+
       - name: Normalize cookie export
         shell: bash
         run: |
