@@ -1,5 +1,6 @@
 """Normalize common browser cookie exports to yt-dlp's Netscape format."""
 
+import base64
 import json
 import math
 import sys
@@ -15,6 +16,64 @@ COOKIE_HEADER_NAMES = {
     "CONSENT", "GPS", "SIDCC", "__Secure-1PSID", "__Secure-3PSID",
     "__Secure-1PSIDTS", "__Secure-3PSIDTS",
 }
+
+
+def _is_netscape_header(line: str) -> bool:
+    normalized = line.strip().lower()
+    return normalized.startswith("# netscape http cookie file") or normalized.startswith("# http cookie file")
+
+
+def _unwrap_transport(raw: str) -> str:
+    """Unwrap common secret transport encodings without touching cookie values."""
+    text = raw.lstrip("\ufeff")
+    seen = set()
+    for _ in range(4):
+        if text in seen:
+            break
+        seen.add(text)
+        first_line = text.splitlines()[0] if text.splitlines() else ""
+        if _is_netscape_header(first_line) and "\\n" not in first_line:
+            return text
+
+        stripped = text.strip()
+        # A secret copied from JSON or a shell variable may contain the whole
+        # Netscape file as a JSON/Python string rather than as real newlines.
+        for parser in (json.loads, ast.literal_eval):
+            try:
+                decoded = parser(stripped)
+            except (ValueError, SyntaxError, json.JSONDecodeError):
+                continue
+            if isinstance(decoded, str) and decoded != text:
+                text = decoded
+                break
+        else:
+            decoded = urllib.parse.unquote(text)
+            if decoded != text:
+                text = decoded
+                continue
+
+            # Some secret-management commands store the entire file as one
+            # Base64 value. Only accept it when the decoded payload is clearly
+            # a Netscape export, so ordinary cookie values are never decoded.
+            compact = "".join(stripped.split())
+            if compact and len(compact) % 4 == 0:
+                try:
+                    candidate = base64.b64decode(compact, validate=True).decode("utf-8-sig")
+                except (ValueError, UnicodeDecodeError):
+                    candidate = ""
+                if _is_netscape_header(candidate.splitlines()[0] if candidate else ""):
+                    text = candidate
+                    continue
+
+            # Literal escaped line/tab separators are only decoded when the
+            # payload advertises a Netscape header, avoiding changes to JSON
+            # cookie values that legitimately contain backslashes.
+            if "\\n" in text and "Netscape HTTP Cookie File\\n" in text:
+                text = text.replace("\\r\\n", "\n").replace("\\n", "\n").replace("\\t", "\t")
+                continue
+            break
+        continue
+    return text
 
 
 def _cookie_items(data: Any) -> Iterable[Dict[str, Any]]:
@@ -42,14 +101,13 @@ def _expiry(cookie: Dict[str, Any]) -> str:
 
 
 def normalize(path: Path) -> str:
-    raw = path.read_text(encoding="utf-8-sig", errors="replace")
+    raw = _unwrap_transport(path.read_text(encoding="utf-8-sig", errors="replace"))
     raw_lines = raw.splitlines()
     header_index = next(
         (
             index
             for index, line in enumerate(raw_lines)
-            if line.strip().startswith("# Netscape HTTP Cookie File")
-            or line.strip().startswith("# HTTP Cookie File")
+            if _is_netscape_header(line)
         ),
         None,
     )

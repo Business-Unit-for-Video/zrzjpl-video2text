@@ -52,3 +52,35 @@ def test_cookie_normalizer_converts_python_literal(tmp_path) -> None:
     )
 
     assert normalize(cookie_file) == "converted-json:1"
+
+
+def test_cookie_normalizer_accepts_standard_netscape_export(tmp_path) -> None:
+    from scripts.normalize_youtube_cookies import normalize
+
+    cookie_file = tmp_path / "cookies.txt"
+    cookie_file.write_text(
+        "# Netscape HTTP Cookie File\n"
+        "# https://curl.haxx.se/rfc/cookie_spec.html\n"
+        "# This is a generated file! Do not edit.\n"
+        ".youtube.com\tTRUE\t/\tFALSE\t1822179525\tHSID\tredacted\n"
+        ".youtube.com\tTRUE\t/\tTRUE\t1822179525\t__Secure-1PSID\talso-redacted\n",
+        encoding="utf-8",
+    )
+
+    assert normalize(cookie_file) == "netscape"
+    lines = cookie_file.read_text(encoding="utf-8").splitlines()
+    assert lines[0] == "# Netscape HTTP Cookie File"
+    assert len([line for line in lines if line and not line.startswith("#")]) == 2
+
+
+def test_cookie_normalizer_unwraps_escaped_netscape_secret(tmp_path) -> None:
+    from scripts.normalize_youtube_cookies import normalize
+
+    cookie_file = tmp_path / "cookies.txt"
+    cookie_file.write_text(
+        r"# Netscape HTTP Cookie File\n.youtube.com\tTRUE\t/\tTRUE\t0\tSID\tredacted",
+        encoding="utf-8",
+    )
+
+    assert normalize(cookie_file) == "netscape"
+    assert "\tSID\tredacted" in cookie_file.read_text(encoding="utf-8")
