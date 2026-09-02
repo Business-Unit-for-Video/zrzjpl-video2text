@@ -1,0 +1,6 @@
+video_id: Ge39Ac8pTh8
+title: 合肥市委书记的激烈博弈；中纪委副书记张忠的神秘背景；中组部纪检组长李刚和掮客的故事；潘石屹和王岐山派系的主要关系；潘和郭文贵有啥仇怨；大城市学区房的估值公式；主要城市房价预测；成克杰被枪毙原因。
+url: https://www.youtube.com/watch?v=Ge39Ac8pTh8
+tab: streams
+time: 2026-09-02 21:09:11
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Ge39Ac8pTh8.%(ext)s', 'https://www.youtube.com/watch?v=Ge39Ac8pTh8'])

@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/_GRNvZA3P4Q.%(ext)s', 'https://www.youtube.com/watch?v=_GRNvZA3P4Q'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Ge39Ac8pTh8.%(ext)s', 'https://www.youtube.com/watch?v=Ge39Ac8pTh8'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 139,
-  "queue_index": 90,
-  "updated_at": 1788367413,
-  "updated_at_readable": "2026-09-02 16:43:33",
-  "current_video_id": "_GRNvZA3P4Q",
-  "current_title": "传闻中的景甜金主--路征的真实身份和庞大家族；孙宇晨爆料背后的真实原因--火币被欧盟限制；孙宇晨与中共权贵的关系；孙宇晨命运的两次生死存亡；张继科和景甜裸照的真相；女孩找男朋友的四个不等式。",
-  "current_url": "https://www.youtube.com/watch?v=_GRNvZA3P4Q",
+  "queue_index": 91,
+  "updated_at": 1788383351,
+  "updated_at_readable": "2026-09-02 21:09:11",
+  "current_video_id": "Ge39Ac8pTh8",
+  "current_title": "合肥市委书记的激烈博弈；中纪委副书记张忠的神秘背景；中组部纪检组长李刚和掮客的故事；潘石屹和王岐山派系的主要关系；潘和郭文贵有啥仇怨；大城市学区房的估值公式；主要城市房价预测；成克杰被枪毙原因。",
+  "current_url": "https://www.youtube.com/watch?v=Ge39Ac8pTh8",
   "current_tab": "streams"
 }
