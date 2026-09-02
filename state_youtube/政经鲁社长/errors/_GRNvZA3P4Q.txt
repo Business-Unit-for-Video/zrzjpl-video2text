@@ -1,0 +1,6 @@
+video_id: _GRNvZA3P4Q
+title: 传闻中的景甜金主--路征的真实身份和庞大家族；孙宇晨爆料背后的真实原因--火币被欧盟限制；孙宇晨与中共权贵的关系；孙宇晨命运的两次生死存亡；张继科和景甜裸照的真相；女孩找男朋友的四个不等式。
+url: https://www.youtube.com/watch?v=_GRNvZA3P4Q
+tab: streams
+time: 2026-09-02 16:43:33
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/_GRNvZA3P4Q.%(ext)s', 'https://www.youtube.com/watch?v=_GRNvZA3P4Q'])
