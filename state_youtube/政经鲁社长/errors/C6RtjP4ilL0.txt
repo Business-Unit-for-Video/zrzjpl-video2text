@@ -1,0 +1,6 @@
+video_id: C6RtjP4ilL0
+title: 孙-景事件终极真相；颠覆你三观的娱乐圈八卦；当红小花们背后的资本大佬；女明星献身的两种类型；民歌圈和主持圈名人和权贵们的关系：演员和资本大佬的市场化关系；
+url: https://www.youtube.com/watch?v=C6RtjP4ilL0
+tab: streams
+time: 2026-09-02 11:29:48
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/C6RtjP4ilL0.%(ext)s', 'https://www.youtube.com/watch?v=C6RtjP4ilL0'])
