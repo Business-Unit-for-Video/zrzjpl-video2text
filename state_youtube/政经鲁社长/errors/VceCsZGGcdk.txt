@@ -1,0 +1,6 @@
+video_id: VceCsZGGcdk
+title: 江泽民如何在惊涛骇浪中逆袭夺权？江泽民如何搞定中南海各大元老？被邓小平南巡严厉敲打如何自救？江泽民靠什么推倒了军权熏天的杨氏兄弟？他如何借机彻底清洗北京官场？江泽民的四大杀手锏究竟是什么？
+url: https://www.youtube.com/watch?v=VceCsZGGcdk
+tab: videos
+time: 2026-09-20 11:36:44
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/VceCsZGGcdk.%(ext)s', 'https://www.youtube.com/watch?v=VceCsZGGcdk'])
