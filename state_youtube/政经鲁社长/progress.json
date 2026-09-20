@@ -1,15 +1,15 @@
 {
-  "status": "done_one",
-  "note": "one video processed, more pending",
+  "status": "finished_with_errors",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/iC8a1SW78PE.%(ext)s', 'https://www.youtube.com/watch?v=iC8a1SW78PE'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "queue_total": 139,
-  "queue_index": 105,
-  "updated_at": 1788472463,
-  "updated_at_readable": "2026-09-03 21:54:23",
-  "current_video_id": "iQ086AAtZRY",
-  "current_title": "俞浩背后的高层背景；刘鹤儿子为什么能量巨大；刘云山和贾春旺家族的联姻；毛泽东的千亿孙女婿；俞浩的老丈人究竟给了他什么；三个追觅是怎么回事；俞浩的底层商业逻辑；追觅最后结局会是怎样？青年人创业的五个忠告",
-  "current_url": "https://www.youtube.com/watch?v=iQ086AAtZRY",
-  "current_tab": "streams"
+  "queue_total": 137,
+  "queue_index": 1,
+  "updated_at": 1789880574,
+  "updated_at_readable": "2026-09-20 05:02:54",
+  "current_video_id": "iC8a1SW78PE",
+  "current_title": "景甜真正的幕后大哥是谁？路征凭何调动万达王健林？路征的贾氏家族在陕西有多强？谁在助她两次强上春晚和斩获国际大片？失去庇护后的景甜何去何从？｜景甜｜孙宇晨｜习远平｜路征｜王健林｜俞正声｜贾庆林｜景俊海｜",
+  "current_url": "https://www.youtube.com/watch?v=iC8a1SW78PE",
+  "current_tab": "videos"
 }
