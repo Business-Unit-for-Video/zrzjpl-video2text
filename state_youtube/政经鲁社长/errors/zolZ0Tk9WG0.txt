@@ -1,0 +1,6 @@
+video_id: zolZ0Tk9WG0
+title: 董建华和外逃部长许家屯：许家屯回国和华西村；董建华和江泽民的渊源；他为什么能当上第一届香港特首；他和习近平的关系；他的八大措施为什么失败；失败的政治体制设计如何锁死了香港的前途；香港发展的上限和下限
+url: https://www.youtube.com/watch?v=zolZ0Tk9WG0
+tab: streams
+time: 2026-09-20 20:56:25
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/zolZ0Tk9WG0.%(ext)s', 'https://www.youtube.com/watch?v=zolZ0Tk9WG0'])
