@@ -1,0 +1,6 @@
+video_id: u9JzDfnWcFo
+title: 团派和乒乓球；体育总局长苟仲文和蔡振华的内斗；国乒罢赛的真相；中国乒乓球的三次创业；刘国梁的数十亿商业版图；WTT如何压榨国乒运动员；刘国梁为何欺凌张继科和樊振东；王楚钦和岳云鹏的相似之处；
+url: https://www.youtube.com/watch?v=u9JzDfnWcFo
+tab: streams
+time: 2026-09-20 16:16:49
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/u9JzDfnWcFo.%(ext)s', 'https://www.youtube.com/watch?v=u9JzDfnWcFo'])
