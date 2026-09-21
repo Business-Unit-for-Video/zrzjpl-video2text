@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/zolZ0Tk9WG0.%(ext)s', 'https://www.youtube.com/watch?v=zolZ0Tk9WG0'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/FdwgYLkTOQw.%(ext)s', 'https://www.youtube.com/watch?v=FdwgYLkTOQw'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 137,
-  "queue_index": 85,
-  "updated_at": 1789937785,
-  "updated_at_readable": "2026-09-20 20:56:25",
-  "current_video_id": "zolZ0Tk9WG0",
-  "current_title": "董建华和外逃部长许家屯：许家屯回国和华西村；董建华和江泽民的渊源；他为什么能当上第一届香港特首；他和习近平的关系；他的八大措施为什么失败；失败的政治体制设计如何锁死了香港的前途；香港发展的上限和下限",
-  "current_url": "https://www.youtube.com/watch?v=zolZ0Tk9WG0",
+  "queue_index": 86,
+  "updated_at": 1789967312,
+  "updated_at_readable": "2026-09-21 05:08:32",
+  "current_video_id": "FdwgYLkTOQw",
+  "current_title": "中东局势与石油价格；非农数据和黄金；财政部3600亿注资金融机构的意图；人民币升值的底层原因；2017和2021年-梁袁被封杀的关键时间；出入境新规到底影响哪些人；哪些人应该移民；年轻人就业在线指导",
+  "current_url": "https://www.youtube.com/watch?v=FdwgYLkTOQw",
   "current_tab": "streams"
 }

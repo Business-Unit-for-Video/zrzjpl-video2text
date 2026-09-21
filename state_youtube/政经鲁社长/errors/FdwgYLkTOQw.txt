@@ -1,0 +1,6 @@
+video_id: FdwgYLkTOQw
+title: 中东局势与石油价格；非农数据和黄金；财政部3600亿注资金融机构的意图；人民币升值的底层原因；2017和2021年-梁袁被封杀的关键时间；出入境新规到底影响哪些人；哪些人应该移民；年轻人就业在线指导
+url: https://www.youtube.com/watch?v=FdwgYLkTOQw
+tab: streams
+time: 2026-09-21 05:08:32
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/FdwgYLkTOQw.%(ext)s', 'https://www.youtube.com/watch?v=FdwgYLkTOQw'])
