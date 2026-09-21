@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Vez58VaPvlQ.%(ext)s', 'https://www.youtube.com/watch?v=Vez58VaPvlQ'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/d5M4KHjLek4.%(ext)s', 'https://www.youtube.com/watch?v=d5M4KHjLek4'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 137,
-  "queue_index": 87,
-  "updated_at": 1789995685,
-  "updated_at_readable": "2026-09-21 13:01:25",
-  "current_video_id": "Vez58VaPvlQ",
-  "current_title": "习近平的五大70后接班人都是谁？新任上海市长朱忠明和李强的渊源；新任甘肃省长孔绍逊是谁的秘书？胡锦涛为什么被他架出去？第一个80后副部给哪个领导当过秘书？老领导有过哪些绯闻；原江西省长叶建春靠山是谁？",
-  "current_url": "https://www.youtube.com/watch?v=Vez58VaPvlQ",
+  "queue_index": 105,
+  "updated_at": 1790028239,
+  "updated_at_readable": "2026-09-21 22:03:59",
+  "current_video_id": "d5M4KHjLek4",
+  "current_title": "王岐山大秘黎晓宏被抓的连锁反应；王岐山嫡系郭树清和田国立为什么还不倒？湖北省的重大人事变化；中国的五大周期重合；中产阶级家庭资产配置的格林斯潘时钟；年轻人翻身的五大措施；M型社会的重大变化。",
+  "current_url": "https://www.youtube.com/watch?v=d5M4KHjLek4",
   "current_tab": "streams"
 }
