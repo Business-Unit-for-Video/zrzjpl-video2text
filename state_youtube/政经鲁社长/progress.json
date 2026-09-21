@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/FdwgYLkTOQw.%(ext)s', 'https://www.youtube.com/watch?v=FdwgYLkTOQw'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Vez58VaPvlQ.%(ext)s', 'https://www.youtube.com/watch?v=Vez58VaPvlQ'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 137,
-  "queue_index": 86,
-  "updated_at": 1789967312,
-  "updated_at_readable": "2026-09-21 05:08:32",
-  "current_video_id": "FdwgYLkTOQw",
-  "current_title": "中东局势与石油价格；非农数据和黄金；财政部3600亿注资金融机构的意图；人民币升值的底层原因；2017和2021年-梁袁被封杀的关键时间；出入境新规到底影响哪些人；哪些人应该移民；年轻人就业在线指导",
-  "current_url": "https://www.youtube.com/watch?v=FdwgYLkTOQw",
+  "queue_index": 87,
+  "updated_at": 1789995685,
+  "updated_at_readable": "2026-09-21 13:01:25",
+  "current_video_id": "Vez58VaPvlQ",
+  "current_title": "习近平的五大70后接班人都是谁？新任上海市长朱忠明和李强的渊源；新任甘肃省长孔绍逊是谁的秘书？胡锦涛为什么被他架出去？第一个80后副部给哪个领导当过秘书？老领导有过哪些绯闻；原江西省长叶建春靠山是谁？",
+  "current_url": "https://www.youtube.com/watch?v=Vez58VaPvlQ",
   "current_tab": "streams"
 }
