@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/d5M4KHjLek4.%(ext)s', 'https://www.youtube.com/watch?v=d5M4KHjLek4'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/XlB138G9fwU.%(ext)s', 'https://www.youtube.com/watch?v=XlB138G9fwU'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "queue_total": 137,
-  "queue_index": 105,
-  "updated_at": 1790028239,
-  "updated_at_readable": "2026-09-21 22:03:59",
-  "current_video_id": "d5M4KHjLek4",
-  "current_title": "王岐山大秘黎晓宏被抓的连锁反应；王岐山嫡系郭树清和田国立为什么还不倒？湖北省的重大人事变化；中国的五大周期重合；中产阶级家庭资产配置的格林斯潘时钟；年轻人翻身的五大措施；M型社会的重大变化。",
-  "current_url": "https://www.youtube.com/watch?v=d5M4KHjLek4",
+  "queue_total": 138,
+  "queue_index": 84,
+  "updated_at": 1790053797,
+  "updated_at_readable": "2026-09-22 05:09:57",
+  "current_video_id": "XlB138G9fwU",
+  "current_title": "公开直播：任正非逃亡风波",
+  "current_url": "https://www.youtube.com/watch?v=XlB138G9fwU",
   "current_tab": "streams"
 }

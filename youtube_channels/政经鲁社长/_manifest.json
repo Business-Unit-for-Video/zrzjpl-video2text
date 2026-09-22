@@ -2,7 +2,7 @@
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "generated_at": "2026-09-21 22:03:43",
+  "generated_at": "2026-09-22 05:09:40",
   "items": [
     {
       "id": "iC8a1SW78PE",
@@ -666,6 +666,14 @@
       "url": "https://www.youtube.com/watch?v=t1z7O7wd2bk",
       "tab": "videos",
       "duration": 1444,
+      "availability": null
+    },
+    {
+      "id": "XlB138G9fwU",
+      "title": "公开直播：任正非逃亡风波",
+      "url": "https://www.youtube.com/watch?v=XlB138G9fwU",
+      "tab": "streams",
+      "duration": null,
       "availability": null
     },
     {

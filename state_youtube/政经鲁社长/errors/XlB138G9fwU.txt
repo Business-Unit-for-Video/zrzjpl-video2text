@@ -1,0 +1,6 @@
+video_id: XlB138G9fwU
+title: 公开直播：任正非逃亡风波
+url: https://www.youtube.com/watch?v=XlB138G9fwU
+tab: streams
+time: 2026-09-22 05:09:57
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/XlB138G9fwU.%(ext)s', 'https://www.youtube.com/watch?v=XlB138G9fwU'])
