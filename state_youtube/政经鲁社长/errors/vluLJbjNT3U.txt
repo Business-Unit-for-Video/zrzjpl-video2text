@@ -1,0 +1,6 @@
+video_id: vluLJbjNT3U
+title: 紧急公开直播：鲁社长大战三巨头的过程；三巨头公关部的风格；屠龙少年如何成了恶龙；互联网巨头们的原始罪恶；
+url: https://www.youtube.com/watch?v=vluLJbjNT3U
+tab: streams
+time: 2026-09-22 11:51:27
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/vluLJbjNT3U.%(ext)s', 'https://www.youtube.com/watch?v=vluLJbjNT3U'])

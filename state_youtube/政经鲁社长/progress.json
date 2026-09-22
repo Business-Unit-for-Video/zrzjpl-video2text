@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/XlB138G9fwU.%(ext)s', 'https://www.youtube.com/watch?v=XlB138G9fwU'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/vluLJbjNT3U.%(ext)s', 'https://www.youtube.com/watch?v=vluLJbjNT3U'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 138,
-  "queue_index": 84,
-  "updated_at": 1790053797,
-  "updated_at_readable": "2026-09-22 05:09:57",
-  "current_video_id": "XlB138G9fwU",
-  "current_title": "公开直播：任正非逃亡风波",
-  "current_url": "https://www.youtube.com/watch?v=XlB138G9fwU",
+  "queue_index": 107,
+  "updated_at": 1790077887,
+  "updated_at_readable": "2026-09-22 11:51:27",
+  "current_video_id": "vluLJbjNT3U",
+  "current_title": "紧急公开直播：鲁社长大战三巨头的过程；三巨头公关部的风格；屠龙少年如何成了恶龙；互联网巨头们的原始罪恶；",
+  "current_url": "https://www.youtube.com/watch?v=vluLJbjNT3U",
   "current_tab": "streams"
 }
