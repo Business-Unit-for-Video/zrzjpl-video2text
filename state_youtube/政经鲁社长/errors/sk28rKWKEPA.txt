@@ -1,0 +1,6 @@
+video_id: sk28rKWKEPA
+title: 习近平的惊人新变化：习近平和中国式财阀的诞生；习近平和李强的奇怪合作；李强和李克强的神似；中国如何卡死了产业链转移；特朗普和硅谷科技大鳄的媾和；特朗普对华政策的大调整；G2时代的来临
+url: https://www.youtube.com/watch?v=sk28rKWKEPA
+tab: streams
+time: 2026-09-22 17:04:58
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/sk28rKWKEPA.%(ext)s', 'https://www.youtube.com/watch?v=sk28rKWKEPA'])
