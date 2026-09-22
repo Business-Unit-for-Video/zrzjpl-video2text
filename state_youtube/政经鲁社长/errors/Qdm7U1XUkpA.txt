@@ -1,0 +1,6 @@
+video_id: Qdm7U1XUkpA
+title: 拼多多跟李强总理的关系；陈吉宁和上海市政府为什么鼎力支持拼多多；拼多多给上海做了哪些天大的贡献；为什么说电商是三个80后的对决；为什么说拼多多是最享受时代红利的电商；段永平为什么投资它；黄峥｜李强
+url: https://www.youtube.com/watch?v=Qdm7U1XUkpA
+tab: streams
+time: 2026-09-22 21:29:06
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Qdm7U1XUkpA.%(ext)s', 'https://www.youtube.com/watch?v=Qdm7U1XUkpA'])

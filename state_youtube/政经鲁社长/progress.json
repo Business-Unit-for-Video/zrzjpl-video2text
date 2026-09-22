@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/sk28rKWKEPA.%(ext)s', 'https://www.youtube.com/watch?v=sk28rKWKEPA'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Qdm7U1XUkpA.%(ext)s', 'https://www.youtube.com/watch?v=Qdm7U1XUkpA'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 138,
-  "queue_index": 108,
-  "updated_at": 1790096698,
-  "updated_at_readable": "2026-09-22 17:04:58",
-  "current_video_id": "sk28rKWKEPA",
-  "current_title": "习近平的惊人新变化：习近平和中国式财阀的诞生；习近平和李强的奇怪合作；李强和李克强的神似；中国如何卡死了产业链转移；特朗普和硅谷科技大鳄的媾和；特朗普对华政策的大调整；G2时代的来临",
-  "current_url": "https://www.youtube.com/watch?v=sk28rKWKEPA",
+  "queue_index": 109,
+  "updated_at": 1790112546,
+  "updated_at_readable": "2026-09-22 21:29:06",
+  "current_video_id": "Qdm7U1XUkpA",
+  "current_title": "拼多多跟李强总理的关系；陈吉宁和上海市政府为什么鼎力支持拼多多；拼多多给上海做了哪些天大的贡献；为什么说电商是三个80后的对决；为什么说拼多多是最享受时代红利的电商；段永平为什么投资它；黄峥｜李强",
+  "current_url": "https://www.youtube.com/watch?v=Qdm7U1XUkpA",
   "current_tab": "streams"
 }
