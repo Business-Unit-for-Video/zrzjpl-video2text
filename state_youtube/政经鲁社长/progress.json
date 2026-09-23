@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/145DtwaSB5w.%(ext)s', 'https://www.youtube.com/watch?v=145DtwaSB5w'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/eIXIxpMc_Oo.%(ext)s', 'https://www.youtube.com/watch?v=eIXIxpMc_Oo'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "queue_total": 138,
-  "queue_index": 110,
-  "updated_at": 1790139279,
-  "updated_at_readable": "2026-09-23 04:54:39",
-  "current_video_id": "145DtwaSB5w",
-  "current_title": "华谊兄弟和胡锦涛家族的关系；国安部和宗教局长崔茂虎的落马；嚣张的拼多多背后到底是谁？华谊衰落的三个原因；黑社会和香港电影；李连杰经纪人被暗杀的故事；中影的四个垄断优势；中国电影衰落的三个原因；",
-  "current_url": "https://www.youtube.com/watch?v=145DtwaSB5w",
+  "queue_total": 139,
+  "queue_index": 84,
+  "updated_at": 1790164268,
+  "updated_at_readable": "2026-09-23 11:51:08",
+  "current_video_id": "eIXIxpMc_Oo",
+  "current_title": "公开直播：西贝再战罗永浩",
+  "current_url": "https://www.youtube.com/watch?v=eIXIxpMc_Oo",
   "current_tab": "streams"
 }
