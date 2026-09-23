@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Qdm7U1XUkpA.%(ext)s', 'https://www.youtube.com/watch?v=Qdm7U1XUkpA'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/145DtwaSB5w.%(ext)s', 'https://www.youtube.com/watch?v=145DtwaSB5w'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 138,
-  "queue_index": 109,
-  "updated_at": 1790112546,
-  "updated_at_readable": "2026-09-22 21:29:06",
-  "current_video_id": "Qdm7U1XUkpA",
-  "current_title": "拼多多跟李强总理的关系；陈吉宁和上海市政府为什么鼎力支持拼多多；拼多多给上海做了哪些天大的贡献；为什么说电商是三个80后的对决；为什么说拼多多是最享受时代红利的电商；段永平为什么投资它；黄峥｜李强",
-  "current_url": "https://www.youtube.com/watch?v=Qdm7U1XUkpA",
+  "queue_index": 110,
+  "updated_at": 1790139279,
+  "updated_at_readable": "2026-09-23 04:54:39",
+  "current_video_id": "145DtwaSB5w",
+  "current_title": "华谊兄弟和胡锦涛家族的关系；国安部和宗教局长崔茂虎的落马；嚣张的拼多多背后到底是谁？华谊衰落的三个原因；黑社会和香港电影；李连杰经纪人被暗杀的故事；中影的四个垄断优势；中国电影衰落的三个原因；",
+  "current_url": "https://www.youtube.com/watch?v=145DtwaSB5w",
   "current_tab": "streams"
 }
