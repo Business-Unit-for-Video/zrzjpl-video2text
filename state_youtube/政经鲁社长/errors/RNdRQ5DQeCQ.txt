@@ -1,0 +1,6 @@
+video_id: RNdRQ5DQeCQ
+title: 跳楼的辽宁省委秘书长；潘石屹出国的真实原因；西贝贾国龙的背景；房价的未来发展趋势；房地产悲剧的底层原因；中国房地产的三次危机和政府的三次救市；郭树清能够幸存至今的原因；许晴和沈南鹏黄光裕的香艳往事；
+url: https://www.youtube.com/watch?v=RNdRQ5DQeCQ
+tab: streams
+time: 2026-09-23 17:14:49
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/RNdRQ5DQeCQ.%(ext)s', 'https://www.youtube.com/watch?v=RNdRQ5DQeCQ'])
