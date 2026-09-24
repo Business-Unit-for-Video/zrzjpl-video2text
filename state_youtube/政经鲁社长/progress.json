@@ -1,15 +1,15 @@
 {
-  "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/b64ekVis8ZE.%(ext)s', 'https://www.youtube.com/watch?v=b64ekVis8ZE'])",
+  "status": "done_one",
+  "note": "one video processed, more pending",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 139,
-  "queue_index": 123,
-  "updated_at": 1790268859,
-  "updated_at_readable": "2026-09-24 16:54:19",
-  "current_video_id": "b64ekVis8ZE",
-  "current_title": "何卫东为什么会自决？他是如何意外成为军委副主席的？31军和越战帮如何内斗？何卫东究竟犯了多大的罪？他为何会感到冤枉？他有哪些短板和缺陷？他用什么手段自决？张又侠｜苗华｜火箭军腐败案｜习近平",
-  "current_url": "https://www.youtube.com/watch?v=b64ekVis8ZE",
+  "queue_index": 124,
+  "updated_at": 1790272437,
+  "updated_at_readable": "2026-09-24 17:53:57",
+  "current_video_id": "B7bV6Zol2gk",
+  "current_title": "张又侠落马的内幕；郭万钧、康日新等历史性间谍案对比；核武机密外流逻辑的严谨性；中国金融监管与外交部内部的派系斗争",
+  "current_url": "https://www.youtube.com/watch?v=B7bV6Zol2gk",
   "current_tab": "streams"
 }
