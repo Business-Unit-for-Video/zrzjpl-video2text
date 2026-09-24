@@ -1,15 +1,15 @@
 {
-  "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/0cuaOHZNk_8.%(ext)s', 'https://www.youtube.com/watch?v=0cuaOHZNk_8'])",
+  "status": "done_one",
+  "note": "one video processed, more pending",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 139,
-  "queue_index": 114,
-  "updated_at": 1790226226,
-  "updated_at_readable": "2026-09-24 05:03:46",
-  "current_video_id": "0cuaOHZNk_8",
-  "current_title": "马兴瑞起家的伯乐们；他和江泽民父子的亲密关系；他如何攀附习近平大姐；如何攀附彭丽媛家族；他和张又侠许其亮的历史渊源；马兴瑞妻子的荒唐故事；马兴瑞历任秘书的评价；郭永航和格力改制中的勾兑；航天系的落幕",
-  "current_url": "https://www.youtube.com/watch?v=0cuaOHZNk_8",
+  "queue_index": 115,
+  "updated_at": 1790254215,
+  "updated_at_readable": "2026-09-24 12:50:15",
+  "current_video_id": "tUEpaZ9FnQ0",
+  "current_title": "周亮跟钟绍军是什么交情；他因为什么而落马？王岐山的九个秘书的结局；他的外围团队都有哪些人；王岐山是如何一步步变坏的？王岐山的警卫秘书陈臻是如何落马的？孙力军落马如何引起董宏落马；习近平如何敲打王岐山",
+  "current_url": "https://www.youtube.com/watch?v=tUEpaZ9FnQ0",
   "current_tab": "streams"
 }
