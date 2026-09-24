@@ -1,0 +1,6 @@
+video_id: lp6e67YhF5w
+title: 鲁陶相对论（第二期）：习近平访美
+url: https://www.youtube.com/watch?v=lp6e67YhF5w
+tab: streams
+time: 2026-09-24 23:47:44
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/lp6e67YhF5w.%(ext)s', 'https://www.youtube.com/watch?v=lp6e67YhF5w'])

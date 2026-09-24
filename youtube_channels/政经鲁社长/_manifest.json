@@ -2,7 +2,7 @@
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "generated_at": "2026-09-24 23:14:47",
+  "generated_at": "2026-09-24 23:47:30",
   "items": [
     {
       "id": "iC8a1SW78PE",
@@ -666,6 +666,14 @@
       "url": "https://www.youtube.com/watch?v=t1z7O7wd2bk",
       "tab": "videos",
       "duration": 1444,
+      "availability": null
+    },
+    {
+      "id": "lp6e67YhF5w",
+      "title": "鲁陶相对论（第二期）：习近平访美",
+      "url": "https://www.youtube.com/watch?v=lp6e67YhF5w",
+      "tab": "streams",
+      "duration": null,
       "availability": null
     },
     {
