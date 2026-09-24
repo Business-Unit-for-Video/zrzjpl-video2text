@@ -1,15 +1,15 @@
 {
-  "status": "done_one",
-  "note": "one video processed, more pending",
+  "status": "finished_with_errors",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/b64ekVis8ZE.%(ext)s', 'https://www.youtube.com/watch?v=b64ekVis8ZE'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 139,
-  "queue_index": 122,
-  "updated_at": 1790268759,
-  "updated_at_readable": "2026-09-24 16:52:39",
-  "current_video_id": "_yqHs4tMv1s",
-  "current_title": "五分钟讲清楚日本政坛框架；高市早苗的四次竞选过程；习近平的神助攻；她压倒性胜选的四大外部因素；高世的四大致命弱点；日本老登政治的终结；日本命运的十字路口；日本经济的最终症结在哪里；日本大选｜安倍晋三",
-  "current_url": "https://www.youtube.com/watch?v=_yqHs4tMv1s",
+  "queue_index": 123,
+  "updated_at": 1790268859,
+  "updated_at_readable": "2026-09-24 16:54:19",
+  "current_video_id": "b64ekVis8ZE",
+  "current_title": "何卫东为什么会自决？他是如何意外成为军委副主席的？31军和越战帮如何内斗？何卫东究竟犯了多大的罪？他为何会感到冤枉？他有哪些短板和缺陷？他用什么手段自决？张又侠｜苗华｜火箭军腐败案｜习近平",
+  "current_url": "https://www.youtube.com/watch?v=b64ekVis8ZE",
   "current_tab": "streams"
 }
