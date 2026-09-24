@@ -1,0 +1,6 @@
+video_id: 0cuaOHZNk_8
+title: 马兴瑞起家的伯乐们；他和江泽民父子的亲密关系；他如何攀附习近平大姐；如何攀附彭丽媛家族；他和张又侠许其亮的历史渊源；马兴瑞妻子的荒唐故事；马兴瑞历任秘书的评价；郭永航和格力改制中的勾兑；航天系的落幕
+url: https://www.youtube.com/watch?v=0cuaOHZNk_8
+tab: streams
+time: 2026-09-24 05:03:46
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/0cuaOHZNk_8.%(ext)s', 'https://www.youtube.com/watch?v=0cuaOHZNk_8'])
