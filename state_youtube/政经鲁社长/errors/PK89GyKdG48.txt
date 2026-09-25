@@ -1,0 +1,6 @@
+video_id: PK89GyKdG48
+title: 中央办公厅的主要部门；温家宝如何历经三朝不倒；曾庆红如何赎买权力；王刚和胡锦涛习近平的关系；令计划的崛起和落幕；栗战书如何血洗中办；丁薛祥如何利用中办爬到常委；蔡奇的权力限制；中办在权力斗争中的作用；
+url: https://www.youtube.com/watch?v=PK89GyKdG48
+tab: streams
+time: 2026-09-25 12:00:59
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/PK89GyKdG48.%(ext)s', 'https://www.youtube.com/watch?v=PK89GyKdG48'])
