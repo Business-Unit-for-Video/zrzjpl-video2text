@@ -1,0 +1,6 @@
+video_id: DvCswvQwhj0
+title: 叶剑英家族成功传承的秘诀；邓家衰落的密码；陈云家族的八卦和希望；江泽民为孙子的政治布局；江绵恒的激流勇退和家庭教育；李鹏家族的内斗和联姻；第四代领导子女集体从政潮；大型政治家族消失的原因。
+url: https://www.youtube.com/watch?v=DvCswvQwhj0
+tab: streams
+time: 2026-09-25 17:20:06
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/DvCswvQwhj0.%(ext)s', 'https://www.youtube.com/watch?v=DvCswvQwhj0'])
