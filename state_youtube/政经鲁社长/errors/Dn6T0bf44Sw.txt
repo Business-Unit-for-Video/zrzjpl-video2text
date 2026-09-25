@@ -1,0 +1,6 @@
+video_id: Dn6T0bf44Sw
+title: 【直播】 西安官场风暴的背后；西安市委书记方红卫的贵人和落马；监会主席吴清为什么辞职；吉林省委书记景俊海是否落马？陕西官场两个时代和两次清洗；西安五任书记的升迁路径；西安市官场内部故事
+url: https://www.youtube.com/watch?v=Dn6T0bf44Sw
+tab: streams
+time: 2026-09-25 21:41:31
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Dn6T0bf44Sw.%(ext)s', 'https://www.youtube.com/watch?v=Dn6T0bf44Sw'])

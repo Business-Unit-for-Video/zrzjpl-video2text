@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/DvCswvQwhj0.%(ext)s', 'https://www.youtube.com/watch?v=DvCswvQwhj0'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Dn6T0bf44Sw.%(ext)s', 'https://www.youtube.com/watch?v=Dn6T0bf44Sw'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 140,
-  "queue_index": 138,
-  "updated_at": 1790356806,
-  "updated_at_readable": "2026-09-25 17:20:06",
-  "current_video_id": "DvCswvQwhj0",
-  "current_title": "叶剑英家族成功传承的秘诀；邓家衰落的密码；陈云家族的八卦和希望；江泽民为孙子的政治布局；江绵恒的激流勇退和家庭教育；李鹏家族的内斗和联姻；第四代领导子女集体从政潮；大型政治家族消失的原因。",
-  "current_url": "https://www.youtube.com/watch?v=DvCswvQwhj0",
+  "queue_index": 139,
+  "updated_at": 1790372491,
+  "updated_at_readable": "2026-09-25 21:41:31",
+  "current_video_id": "Dn6T0bf44Sw",
+  "current_title": "【直播】 西安官场风暴的背后；西安市委书记方红卫的贵人和落马；监会主席吴清为什么辞职；吉林省委书记景俊海是否落马？陕西官场两个时代和两次清洗；西安五任书记的升迁路径；西安市官场内部故事",
+  "current_url": "https://www.youtube.com/watch?v=Dn6T0bf44Sw",
   "current_tab": "streams"
 }
