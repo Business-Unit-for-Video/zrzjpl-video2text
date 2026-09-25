@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/lp6e67YhF5w.%(ext)s', 'https://www.youtube.com/watch?v=lp6e67YhF5w'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/pdG5vVWSFQ8.%(ext)s', 'https://www.youtube.com/watch?v=pdG5vVWSFQ8'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 140,
-  "queue_index": 84,
-  "updated_at": 1790293664,
-  "updated_at_readable": "2026-09-24 23:47:44",
-  "current_video_id": "lp6e67YhF5w",
-  "current_title": "鲁陶相对论（第二期）：习近平访美",
-  "current_url": "https://www.youtube.com/watch?v=lp6e67YhF5w",
+  "queue_index": 136,
+  "updated_at": 1790312801,
+  "updated_at_readable": "2026-09-25 05:06:41",
+  "current_video_id": "pdG5vVWSFQ8",
+  "current_title": "成都市长王凤朝落马内幕；王小洪和柬埔寨诈骗头子陈志的关系；马兴瑞的绝境；李希的难处；石泰峰整合中组部；刘国中牵扯西安市委书记案件；围绕深圳市委书记的四方博弈；政治局委员们的烦恼和中共的权力图谱变迁",
+  "current_url": "https://www.youtube.com/watch?v=pdG5vVWSFQ8",
   "current_tab": "streams"
 }

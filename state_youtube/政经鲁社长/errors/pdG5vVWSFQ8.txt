@@ -1,0 +1,6 @@
+video_id: pdG5vVWSFQ8
+title: 成都市长王凤朝落马内幕；王小洪和柬埔寨诈骗头子陈志的关系；马兴瑞的绝境；李希的难处；石泰峰整合中组部；刘国中牵扯西安市委书记案件；围绕深圳市委书记的四方博弈；政治局委员们的烦恼和中共的权力图谱变迁
+url: https://www.youtube.com/watch?v=pdG5vVWSFQ8
+tab: streams
+time: 2026-09-25 05:06:41
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/pdG5vVWSFQ8.%(ext)s', 'https://www.youtube.com/watch?v=pdG5vVWSFQ8'])
