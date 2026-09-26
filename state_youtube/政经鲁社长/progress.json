@@ -1,15 +1,15 @@
 {
-  "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/VM-yQVQFi4U.%(ext)s', 'https://www.youtube.com/watch?v=VM-yQVQFi4U'])",
+  "status": "done_one",
+  "note": "one video processed, more pending",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 140,
-  "queue_index": 140,
-  "updated_at": 1790399402,
-  "updated_at_readable": "2026-09-26 05:10:02",
-  "current_video_id": "VM-yQVQFi4U",
-  "current_title": "江泽民孙子江志成的前生今世；博裕资本的幕后操盘人；他们和马云的隐秘关系；马化腾和马明哲是怎么样进行利益输送的；江志成有多少财富；星巴克中国为什么要卖身；",
-  "current_url": "https://www.youtube.com/watch?v=VM-yQVQFi4U",
-  "current_tab": "streams"
+  "queue_index": 1,
+  "updated_at": 1790418636,
+  "updated_at_readable": "2026-09-26 10:30:36",
+  "current_video_id": "iC8a1SW78PE",
+  "current_title": "景甜真正的幕后大哥是谁？路征凭何调动万达王健林？路征的贾氏家族在陕西有多强？谁在助她两次强上春晚和斩获国际大片？失去庇护后的景甜何去何从？｜景甜｜孙宇晨｜习远平｜路征｜王健林｜俞正声｜贾庆林｜景俊海｜",
+  "current_url": "https://www.youtube.com/watch?v=iC8a1SW78PE",
+  "current_tab": "videos"
 }
