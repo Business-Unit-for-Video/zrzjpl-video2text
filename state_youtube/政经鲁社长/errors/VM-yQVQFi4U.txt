@@ -1,0 +1,6 @@
+video_id: VM-yQVQFi4U
+title: 江泽民孙子江志成的前生今世；博裕资本的幕后操盘人；他们和马云的隐秘关系；马化腾和马明哲是怎么样进行利益输送的；江志成有多少财富；星巴克中国为什么要卖身；
+url: https://www.youtube.com/watch?v=VM-yQVQFi4U
+tab: streams
+time: 2026-09-26 05:10:02
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/VM-yQVQFi4U.%(ext)s', 'https://www.youtube.com/watch?v=VM-yQVQFi4U'])

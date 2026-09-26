@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Dn6T0bf44Sw.%(ext)s', 'https://www.youtube.com/watch?v=Dn6T0bf44Sw'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--cookies', 'youtube_cookies.txt', '--no-playlist', '-f', 'ba/bestaudio', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/VM-yQVQFi4U.%(ext)s', 'https://www.youtube.com/watch?v=VM-yQVQFi4U'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 140,
-  "queue_index": 139,
-  "updated_at": 1790372491,
-  "updated_at_readable": "2026-09-25 21:41:31",
-  "current_video_id": "Dn6T0bf44Sw",
-  "current_title": "【直播】 西安官场风暴的背后；西安市委书记方红卫的贵人和落马；监会主席吴清为什么辞职；吉林省委书记景俊海是否落马？陕西官场两个时代和两次清洗；西安五任书记的升迁路径；西安市官场内部故事",
-  "current_url": "https://www.youtube.com/watch?v=Dn6T0bf44Sw",
+  "queue_index": 140,
+  "updated_at": 1790399402,
+  "updated_at_readable": "2026-09-26 05:10:02",
+  "current_video_id": "VM-yQVQFi4U",
+  "current_title": "江泽民孙子江志成的前生今世；博裕资本的幕后操盘人；他们和马云的隐秘关系；马化腾和马明哲是怎么样进行利益输送的；江志成有多少财富；星巴克中国为什么要卖身；",
+  "current_url": "https://www.youtube.com/watch?v=VM-yQVQFi4U",
   "current_tab": "streams"
 }
