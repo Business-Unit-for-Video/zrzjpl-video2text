@@ -1,15 +1,11 @@
 {
-  "status": "done_one",
-  "note": "one video processed, more pending",
+  "status": "finished",
+  "note": "all items completed",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 140,
-  "queue_index": 1,
-  "updated_at": 1790418636,
-  "updated_at_readable": "2026-09-26 10:30:36",
-  "current_video_id": "iC8a1SW78PE",
-  "current_title": "景甜真正的幕后大哥是谁？路征凭何调动万达王健林？路征的贾氏家族在陕西有多强？谁在助她两次强上春晚和斩获国际大片？失去庇护后的景甜何去何从？｜景甜｜孙宇晨｜习远平｜路征｜王健林｜俞正声｜贾庆林｜景俊海｜",
-  "current_url": "https://www.youtube.com/watch?v=iC8a1SW78PE",
-  "current_tab": "videos"
+  "queue_index": 140,
+  "updated_at": 1790418704,
+  "updated_at_readable": "2026-09-26 10:31:44"
 }
