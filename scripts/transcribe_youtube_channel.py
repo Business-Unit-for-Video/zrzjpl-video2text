@@ -30,7 +30,10 @@ AUDIO_FORMAT = os.getenv("AUDIO_FORMAT", "mp3")
 AUDIO_QUALITY = os.getenv("AUDIO_QUALITY", "7")
 YOUTUBE_FALLBACK_CLIENTS = [
     client.strip()
-    for client in os.getenv("YOUTUBE_FALLBACK_CLIENTS", "web_embedded,tv_embedded,android_vr").split(",")
+    for client in os.getenv(
+        "YOUTUBE_FALLBACK_CLIENTS",
+        "default,web_safari,web_embedded,android",
+    ).split(",")
     if client.strip()
 ]
 BEAM_SIZE = int(os.getenv("BEAM_SIZE", "1"))
@@ -172,6 +175,26 @@ def add_cookie_arg(cmd: List[str], enabled: bool = True) -> bool:
         log("[warn] cookie file is not Netscape format; ignoring it and continuing without cookies")
         _invalid_cookie_warning_shown = True
     return False
+
+
+def fallback_client_spec(client: str) -> tuple[str, bool]:
+    """Return an extractor client spec and whether it may use cookies.
+
+    android_vr is intentionally excluded: yt-dlp reports that it does not
+    support cookies and often exposes only storyboard images.  The plain
+    android client is used only as a last anonymous attempt with the
+    documented missing-PO-token format mode.
+    """
+    name = client.strip()
+    if name in {"android_vr", "tv_embedded"}:
+        return "", False
+    if name == "default":
+        return "default,web_embedded", True
+    if name == "web_safari":
+        return "web_safari,web_embedded,-tv_downgraded", True
+    if name == "android":
+        return "android;formats=missing_pot", False
+    return name, True
 
 
 def run(cmd: List[str], capture: bool = False, check: bool = True):
@@ -414,7 +437,10 @@ def download_audio(video_url: str, video_id: str) -> Path:
     add_cookie_arg(base_cmd)
     download_args = [
         "--no-playlist",
-        "-f", "ba/bestaudio",
+        # Some YouTube clients expose only a combined format.  Keep the
+        # audio-only preference, but allow yt-dlp to select a combined stream
+        # and extract its audio when no separate audio URL is available.
+        "-f", "ba/bestaudio/best",
         "-x",
         "--audio-format", AUDIO_FORMAT,
         "--audio-quality", AUDIO_QUALITY,
@@ -427,19 +453,27 @@ def download_audio(video_url: str, video_id: str) -> Path:
     except subprocess.CalledProcessError as first_error:
         # GitHub-hosted IPs can be challenged by YouTube even for public
         # videos. Try a small set of documented public clients before failing.
+        last_error = first_error
         for client in YOUTUBE_FALLBACK_CLIENTS:
+            client_spec, use_cookies = fallback_client_spec(client)
+            if not client_spec:
+                log(f"[info] skipping unsupported cookie client: {client}")
+                continue
             fallback_cmd = ["yt-dlp", "--remote-components", "ejs:github"]
-            add_cookie_arg(fallback_cmd)
-            fallback_cmd.extend(["--extractor-args", f"youtube:player_client={client}"])
+            add_cookie_arg(fallback_cmd, enabled=use_cookies)
+            fallback_cmd.extend(["--extractor-args", f"youtube:player_client={client_spec}"])
             fallback_cmd.extend(download_args)
-            log(f"[warn] default YouTube client failed; retrying player client: {client}")
+            log(f"[warn] default YouTube client failed; retrying player client: {client_spec}")
             try:
                 run(fallback_cmd)
-                break
-            except subprocess.CalledProcessError:
+                files = [p for p in TMP_DIR.glob(f"{video_id}.*") if p.is_file() and not p.name.endswith(".part")]
+                if files:
+                    break
+            except subprocess.CalledProcessError as exc:
+                last_error = exc
                 continue
         else:
-            raise first_error
+            raise last_error
 
     files = [p for p in TMP_DIR.glob(f"{video_id}.*") if p.is_file() and not p.name.endswith(".part")]
     if not files:
