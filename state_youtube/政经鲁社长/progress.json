@@ -1,11 +1,15 @@
 {
-  "status": "finished",
-  "note": "all items completed",
+  "status": "finished_with_errors",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/8tMp5d-g1DQ.%(ext)s', 'https://www.youtube.com/watch?v=8tMp5d-g1DQ'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "queue_total": 140,
-  "queue_index": 140,
-  "updated_at": 1790573713,
-  "updated_at_readable": "2026-09-28 05:35:13"
+  "queue_total": 141,
+  "queue_index": 1,
+  "updated_at": 1790604685,
+  "updated_at_readable": "2026-09-28 14:11:25",
+  "current_video_id": "8tMp5d-g1DQ",
+  "current_title": "张高丽和彭帅是如何相识的？张高丽的人生贵人的谁？张高丽和700亿私有化大案；张高丽和公共情妇李薇？张高丽和习近平的关系是怎样的？张高丽如何对付儿子的情敌；为什么说张高丽是烂尾王？",
+  "current_url": "https://www.youtube.com/watch?v=8tMp5d-g1DQ",
+  "current_tab": "videos"
 }
