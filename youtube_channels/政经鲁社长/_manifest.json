@@ -2,7 +2,7 @@
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "generated_at": "2026-10-01 06:10:04",
+  "generated_at": "2026-10-01 13:31:59",
   "items": [
     {
       "id": "8tMp5d-g1DQ",
@@ -674,6 +674,14 @@
       "url": "https://www.youtube.com/watch?v=t1z7O7wd2bk",
       "tab": "videos",
       "duration": 1444,
+      "availability": null
+    },
+    {
+      "id": "PFCtM1Klyis",
+      "title": "公开直播：中共高官嫖娼记",
+      "url": "https://www.youtube.com/watch?v=PFCtM1Klyis",
+      "tab": "streams",
+      "duration": null,
       "availability": null
     },
     {
