@@ -1,11 +1,15 @@
 {
-  "status": "finished",
-  "note": "all items completed",
+  "status": "finished_with_errors",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/6fGPSFu_AAQ.%(ext)s', 'https://www.youtube.com/watch?v=6fGPSFu_AAQ'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "queue_total": 142,
-  "queue_index": 142,
-  "updated_at": 1791179654,
-  "updated_at_readable": "2026-10-05 05:54:14"
+  "queue_total": 143,
+  "queue_index": 1,
+  "updated_at": 1791212301,
+  "updated_at_readable": "2026-10-05 14:58:21",
+  "current_video_id": "6fGPSFu_AAQ",
+  "current_title": "谁献祭了任志强？为何潘石屹和任志强的结局大不同？他与王岐山、俞正声有着怎样的关系？任志强是如何使华远超越万科？2016年的任志强如何侥幸逃生？蔡奇为何要对付任志强？任志强和王石有着怎样的分别？",
+  "current_url": "https://www.youtube.com/watch?v=6fGPSFu_AAQ",
+  "current_tab": "videos"
 }
