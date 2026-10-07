@@ -1,0 +1,6 @@
+video_id: jyRk-uX2pSA
+title: 鲁-陶相对论：蔡康永事件和台北市长选举
+url: https://www.youtube.com/watch?v=jyRk-uX2pSA
+tab: streams
+time: 2026-10-07 13:37:21
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/jyRk-uX2pSA.%(ext)s', 'https://www.youtube.com/watch?v=jyRk-uX2pSA'])

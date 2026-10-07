@@ -2,7 +2,7 @@
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "generated_at": "2026-10-07 06:12:32",
+  "generated_at": "2026-10-07 13:37:03",
   "items": [
     {
       "id": "6fGPSFu_AAQ",
@@ -682,6 +682,14 @@
       "url": "https://www.youtube.com/watch?v=t1z7O7wd2bk",
       "tab": "videos",
       "duration": 1444,
+      "availability": null
+    },
+    {
+      "id": "jyRk-uX2pSA",
+      "title": "鲁-陶相对论：蔡康永事件和台北市长选举",
+      "url": "https://www.youtube.com/watch?v=jyRk-uX2pSA",
+      "tab": "streams",
+      "duration": null,
       "availability": null
     },
     {
