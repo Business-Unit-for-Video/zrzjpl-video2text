@@ -1,0 +1,6 @@
+video_id: 9wjYnugFlfs
+title: 公开直播：缅甸电诈卷土重来
+url: https://www.youtube.com/watch?v=9wjYnugFlfs
+tab: streams
+time: 2026-10-08 06:19:17
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/9wjYnugFlfs.%(ext)s', 'https://www.youtube.com/watch?v=9wjYnugFlfs'])
