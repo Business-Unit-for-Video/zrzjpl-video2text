@@ -2,7 +2,7 @@
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "generated_at": "2026-10-13 00:50:36",
+  "generated_at": "2026-10-13 14:23:38",
   "items": [
     {
       "id": "6fGPSFu_AAQ",
@@ -682,6 +682,14 @@
       "url": "https://www.youtube.com/watch?v=t1z7O7wd2bk",
       "tab": "videos",
       "duration": 1444,
+      "availability": null
+    },
+    {
+      "id": "c605DP_bjK0",
+      "title": "公开直播：九命猫妖黄奇帆落马记",
+      "url": "https://www.youtube.com/watch?v=c605DP_bjK0",
+      "tab": "streams",
+      "duration": null,
       "availability": null
     },
     {
