@@ -1,15 +1,11 @@
 {
-  "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/RKNhXBuhwnY.%(ext)s', 'https://www.youtube.com/watch?v=RKNhXBuhwnY'])",
+  "status": "finished",
+  "note": "all items completed",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 146,
-  "queue_index": 1,
-  "updated_at": 1792084295,
-  "updated_at_readable": "2026-10-15 17:11:35",
-  "current_video_id": "RKNhXBuhwnY",
-  "current_title": "孙力军如何与董卿相识并恋爱？孙力军如何帮助戴胖子吞并徐明遗产、如何扶植董卿老公成为百亿富豪、如何庇护陈志等灰产头目、如何毁掉香港“望北楼”、如何与王小洪的接班人内斗；孙力军的百亿同居女友是谁？",
-  "current_url": "https://www.youtube.com/watch?v=RKNhXBuhwnY",
-  "current_tab": "videos"
+  "queue_index": 146,
+  "updated_at": 1792099917,
+  "updated_at_readable": "2026-10-15 21:31:57"
 }
