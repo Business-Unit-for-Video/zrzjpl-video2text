@@ -1,11 +1,15 @@
 {
-  "status": "finished",
-  "note": "all items completed",
+  "status": "finished_with_errors",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/8df-lkhYnjU.%(ext)s', 'https://www.youtube.com/watch?v=8df-lkhYnjU'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "queue_total": 146,
-  "queue_index": 146,
-  "updated_at": 1792584180,
-  "updated_at_readable": "2026-10-21 12:03:00"
+  "queue_total": 147,
+  "queue_index": 87,
+  "updated_at": 1792603397,
+  "updated_at_readable": "2026-10-21 17:23:17",
+  "current_video_id": "8df-lkhYnjU",
+  "current_title": "公开直播：何立峰的“发财系”",
+  "current_url": "https://www.youtube.com/watch?v=8df-lkhYnjU",
+  "current_tab": "streams"
 }

@@ -2,7 +2,7 @@
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "generated_at": "2026-10-21 12:03:00",
+  "generated_at": "2026-10-21 17:22:57",
   "items": [
     {
       "id": "RKNhXBuhwnY",
@@ -690,6 +690,14 @@
       "url": "https://www.youtube.com/watch?v=t1z7O7wd2bk",
       "tab": "videos",
       "duration": 1444,
+      "availability": null
+    },
+    {
+      "id": "8df-lkhYnjU",
+      "title": "公开直播：何立峰的“发财系”",
+      "url": "https://www.youtube.com/watch?v=8df-lkhYnjU",
+      "tab": "streams",
+      "duration": null,
       "availability": null
     },
     {
