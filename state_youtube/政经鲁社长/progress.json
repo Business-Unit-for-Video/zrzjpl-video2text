@@ -1,11 +1,15 @@
 {
-  "status": "finished",
-  "note": "all items completed",
+  "status": "finished_with_errors",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/EDqpvLvorfE.%(ext)s', 'https://www.youtube.com/watch?v=EDqpvLvorfE'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "queue_total": 147,
-  "queue_index": 147,
-  "updated_at": 1792670750,
-  "updated_at_readable": "2026-10-22 12:05:50"
+  "queue_total": 148,
+  "queue_index": 1,
+  "updated_at": 1792691688,
+  "updated_at_readable": "2026-10-22 17:54:48",
+  "current_video_id": "EDqpvLvorfE",
+  "current_title": "华为尊界与懂车帝谁胜谁负？为何二者出现激烈矛盾？尊界背后究竟有着怎样的政治背景？ 懂车帝凭着什么底气挑战尊界？江淮汽车在这场博弈中的损失最为惨重？｜江淮汽车｜余承东｜检测报告|尊界V800|懂车帝|",
+  "current_url": "https://www.youtube.com/watch?v=EDqpvLvorfE",
+  "current_tab": "videos"
 }
