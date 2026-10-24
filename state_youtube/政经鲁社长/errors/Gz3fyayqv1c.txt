@@ -1,0 +1,6 @@
+video_id: Gz3fyayqv1c
+title: 福建省长郭宁宁和青海省长诸葛宇杰的绝对反击；河南书记王志军、云南书记莫高义的背景；何立峰旗下的发改委和财政部干部有哪些？他为什么能推荐这么多的干部？
+url: https://www.youtube.com/watch?v=Gz3fyayqv1c
+tab: streams
+time: 2026-10-24 16:05:16
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Gz3fyayqv1c.%(ext)s', 'https://www.youtube.com/watch?v=Gz3fyayqv1c'])
