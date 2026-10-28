@@ -1,0 +1,6 @@
+video_id: ybceN37NaLs
+title: 公开直播：五中全会大点评--习近平的“百年孤独”
+url: https://www.youtube.com/watch?v=ybceN37NaLs
+tab: streams
+time: 2026-10-28 13:13:15
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/ybceN37NaLs.%(ext)s', 'https://www.youtube.com/watch?v=ybceN37NaLs'])

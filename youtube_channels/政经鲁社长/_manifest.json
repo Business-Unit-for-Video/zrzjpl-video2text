@@ -2,7 +2,7 @@
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "generated_at": "2026-10-28 05:56:12",
+  "generated_at": "2026-10-28 13:12:53",
   "items": [
     {
       "id": "EDqpvLvorfE",
@@ -698,6 +698,14 @@
       "url": "https://www.youtube.com/watch?v=t1z7O7wd2bk",
       "tab": "videos",
       "duration": 1444,
+      "availability": null
+    },
+    {
+      "id": "ybceN37NaLs",
+      "title": "公开直播：五中全会大点评--习近平的“百年孤独”",
+      "url": "https://www.youtube.com/watch?v=ybceN37NaLs",
+      "tab": "streams",
+      "duration": null,
       "availability": null
     },
     {
