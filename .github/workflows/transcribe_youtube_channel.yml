@@ -34,14 +34,14 @@ on:
         default: false
         type: boolean
   schedule:
-    - cron: "20 */6 * * *"
+    - cron: "20 */8 * * *"
 
 permissions:
   contents: write
   actions: write
 
 concurrency:
-  group: youtube-channel-${{ inputs.destination || '政经鲁社长' }}-${{ github.ref }}
+  group: youtube-channel-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
