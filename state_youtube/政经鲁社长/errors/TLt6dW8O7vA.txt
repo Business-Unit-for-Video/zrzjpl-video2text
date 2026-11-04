@@ -1,0 +1,6 @@
+video_id: TLt6dW8O7vA
+title: 中国养老金体系面临什么危局？养老保险的三个不公是什么？养老金真的会破产吗？年轻人要不要继续交社保？中国政府采取什么应对方法？造成养老金危局的原因是什么？体制内与体制外的退休金差距到底有多大？
+url: https://www.youtube.com/watch?v=TLt6dW8O7vA
+tab: videos
+time: 2026-11-04 16:26:16
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/TLt6dW8O7vA.%(ext)s', 'https://www.youtube.com/watch?v=TLt6dW8O7vA'])
