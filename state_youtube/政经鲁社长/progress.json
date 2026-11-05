@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/TLt6dW8O7vA.%(ext)s', 'https://www.youtube.com/watch?v=TLt6dW8O7vA'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/BibMdcw1K5o.%(ext)s', 'https://www.youtube.com/watch?v=BibMdcw1K5o'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 152,
-  "queue_index": 1,
-  "updated_at": 1793809576,
-  "updated_at_readable": "2026-11-04 16:26:16",
-  "current_video_id": "TLt6dW8O7vA",
-  "current_title": "中国养老金体系面临什么危局？养老保险的三个不公是什么？养老金真的会破产吗？年轻人要不要继续交社保？中国政府采取什么应对方法？造成养老金危局的原因是什么？体制内与体制外的退休金差距到底有多大？",
-  "current_url": "https://www.youtube.com/watch?v=TLt6dW8O7vA",
-  "current_tab": "videos"
+  "queue_index": 89,
+  "updated_at": 1793862097,
+  "updated_at_readable": "2026-11-05 07:01:37",
+  "current_video_id": "BibMdcw1K5o",
+  "current_title": "公开直播（在线访谈）-----王海：逃亡的打假英雄",
+  "current_url": "https://www.youtube.com/watch?v=BibMdcw1K5o",
+  "current_tab": "streams"
 }
