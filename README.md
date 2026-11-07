@@ -35,6 +35,19 @@ The channel's public playlist page was captured on 2026-11-07. The snapshot in [
 
 The playlist memberships overlap: 135 of the 152 videos in the archived manifest appear in at least one listed playlist, with 178 playlist-to-video matches in total. The remaining 17 archived IDs did not appear in the currently listed public playlists. “公开视频” and “公开直播” describe broad video formats rather than subject topics; playlist names are preserved as the channel presents them, not treated as an exhaustive or mutually exclusive taxonomy. Membership-only playlists are listed, but only IDs already present in the public archive are mapped.
 
+## Political topic cross-reference
+
+The following table links selected archived videos to their original channel playlists and related write-ups in the [Fudan alumni network repository](https://github.com/PeterKZhao/fudan-alumni-network/tree/main/topics/%E6%94%BF%E6%B2%BB%E4%B8%8E%E5%85%AC%E5%85%B1%E8%AE%AE%E9%A2%98). Playlist memberships are taken from the snapshot above and may overlap. This cross-reference is an index, not an endorsement of claims in the videos or write-ups.
+
+| Video | Duration | Channel playlists in the 2026-11-07 snapshot | Related Fudan write-up(s) |
+|---|---:|---|---|
+| [許其亮：習近平的刀斧手](https://www.youtube.com/watch?v=dPtmJdDMlZY) (`dPtmJdDMlZY`) | 10:57 | 公开视频; 每周高层人事动态点评 | [许其亮视频内容与公开履历梳理](https://github.com/PeterKZhao/fudan-alumni-network/blob/main/topics/%E6%94%BF%E6%B2%BB%E4%B8%8E%E5%85%AC%E5%85%B1%E8%AE%AE%E9%A2%98/%E8%AE%B8%E5%85%B6%E4%BA%AE%E8%A7%86%E9%A2%91%E5%86%85%E5%AE%B9%E4%B8%8E%E5%85%AC%E5%BC%80%E5%B1%A5%E5%8E%86%E6%A2%B3%E7%90%86.md) |
+| [栗戰書如何清洗中辦的令計劃勢力](https://www.youtube.com/watch?v=V6arqLM-9UQ) (`V6arqLM-9UQ`) | 14:43 | No match in listed public playlists | [令计划履历与关联人员核查](https://github.com/PeterKZhao/fudan-alumni-network/blob/main/topics/%E6%94%BF%E6%B2%BB%E4%B8%8E%E5%85%AC%E5%85%B1%E8%AE%AE%E9%A2%98/%E4%BB%A4%E8%AE%A1%E5%88%92%E5%B1%A5%E5%8E%86%E4%B8%8E%E5%85%B3%E8%81%94%E4%BA%BA%E5%91%98%E6%A0%B8%E6%9F%A5.md); [栗战书履历与关联关系核查](https://github.com/PeterKZhao/fudan-alumni-network/blob/main/topics/%E6%94%BF%E6%B2%BB%E4%B8%8E%E5%85%AC%E5%85%B1%E8%AE%AE%E9%A2%98/%E6%A0%97%E6%88%98%E4%B9%A6%E5%B1%A5%E5%8E%86%E4%B8%8E%E5%85%B3%E8%81%94%E5%85%B3%E7%B3%BB%E6%A0%B8%E6%9F%A5.md); [两人交集与比较](https://github.com/PeterKZhao/fudan-alumni-network/blob/main/topics/%E6%94%BF%E6%B2%BB%E4%B8%8E%E5%85%AC%E5%85%B1%E8%AE%AE%E9%A2%98/%E4%BB%A4%E8%AE%A1%E5%88%92%E4%B8%8E%E6%A0%97%E6%88%98%E4%B9%A6%E7%9A%84%E4%BA%A4%E9%9B%86%E5%92%8C%E5%AF%B9%E6%AF%94.md) |
+| [6月30日的政治局会议：习近平被限权了吗](https://www.youtube.com/watch?v=GtzsCmJmIcc) (`GtzsCmJmIcc`) | 14:55 | 公开视频; 军队大乱斗丨政变谣言粉碎史：从苗华何卫东到张又侠 | [党中央决策议事协调机构与小组政治：权力协调、制度边界及治理影响](https://github.com/PeterKZhao/fudan-alumni-network/blob/main/topics/%E6%94%BF%E6%B2%BB%E4%B8%8E%E5%85%AC%E5%85%B1%E8%AE%AE%E9%A2%98/%E5%85%9A%E4%B8%AD%E5%A4%AE%E5%86%B3%E7%AD%96%E8%AE%AE%E4%BA%8B%E5%8D%8F%E8%B0%83%E6%9C%BA%E6%9E%84%E4%B8%8E%E5%B0%8F%E7%BB%84%E6%94%BF%E6%B2%BB%EF%BC%9A%E6%9D%83%E5%8A%9B%E5%8D%8F%E8%B0%83%E3%80%81%E5%88%B6%E5%BA%A6%E8%BE%B9%E7%95%8C%E5%8F%8A%E6%B2%BB%E7%90%86%E5%BD%B1%E5%93%8D.md) |
+| [何卫东和秦刚：两个跳级生的悲惨命运](https://www.youtube.com/watch?v=YKXvrIxWrn0) (`YKXvrIxWrn0`) | 24:31 | 公开视频; 军队大乱斗丨政变谣言粉碎史：从苗华何卫东到张又侠 | Summary not yet linked |
+
+“No match” means the video ID is absent from the archived matches in the captured public-playlist snapshot; it does not rule out other channel classifications.
+
 ## Run
 
 Run **转写 YouTube 频道** manually from Actions to override the channel, output destination, Whisper model, or retry previously failed items. The scheduled workflow scans the channel every six hours. Each successful run processes one video and triggers the next one while pending items exist. A failed run stops the chain and records the error for manual inspection, so a platform authentication problem cannot create an unbounded Actions loop.
