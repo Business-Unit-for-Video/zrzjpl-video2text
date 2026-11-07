@@ -9,9 +9,31 @@ The implementation is based on the shared `Video2Text` pipeline and the standalo
 - `youtube_channels/政经鲁社长/with_timestamps/`: timestamped transcripts.
 - `youtube_channels/政经鲁社长/plain/`: plain text transcripts.
 - `youtube_channels/政经鲁社长/_manifest.json`: discovered public-video metadata.
+- `youtube_channels/政经鲁社长/_playlists.json`: snapshot of the channel's public playlists and their intersections with archived video IDs.
 - `state_youtube/政经鲁社长/`: queue, progress, completed/failed IDs, and per-video errors.
 
 Membership-only videos are excluded by default using YouTube availability metadata and conservative title matching. Set `include_members=true` only when the repository cookie is a valid Netscape cookie export and you are authorized to access that content. The workflow uses the repository Actions secret `YOUTUBE_SOURCE_COOKIE_FILE_VIDEO2TEXT`; cookies are written only to the ephemeral runner and are never committed. If the secret is a browser JSON export rather than a Netscape file, it is ignored for public-video runs instead of causing every download to fail.
+
+## Channel playlists
+
+The channel's public playlist page was captured on 2026-11-07. The snapshot in [`_playlists.json`](youtube_channels/政经鲁社长/_playlists.json) records the playlist titles, source URLs, and IDs of archived videos found in each playlist.
+
+| Playlist | Archived videos matched |
+|---|---:|
+| 鲁-陶相对论 | 2 |
+| 公开直播 | 60 |
+| 核心会员线上会议 | 0 |
+| 时事点评 | 6 |
+| 习近平的家族故事 | 5 |
+| 军队大乱斗丨政变谣言粉碎史：从苗华何卫东到张又侠 | 12 |
+| 公开视频 | 81 |
+| 会员直播 | 2 |
+| 会员专享视频 | 0 |
+| 每周高层人事动态点评 | 5 |
+| 中纪委书记 | 4 |
+| 中共白手套传奇 | 1 |
+
+The playlist memberships overlap: 135 of the 152 videos in the archived manifest appear in at least one listed playlist, with 178 playlist-to-video matches in total. The remaining 17 archived IDs did not appear in the currently listed public playlists. “公开视频” and “公开直播” describe broad video formats rather than subject topics; playlist names are preserved as the channel presents them, not treated as an exhaustive or mutually exclusive taxonomy. Membership-only playlists are listed, but only IDs already present in the public archive are mapped.
 
 ## Run
 
