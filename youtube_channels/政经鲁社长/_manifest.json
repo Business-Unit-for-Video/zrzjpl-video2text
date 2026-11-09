@@ -2,7 +2,7 @@
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "generated_at": "2026-11-09 06:51:45",
+  "generated_at": "2026-11-09 18:55:37",
   "items": [
     {
       "id": "TLt6dW8O7vA",
@@ -706,6 +706,14 @@
       "url": "https://www.youtube.com/watch?v=t1z7O7wd2bk",
       "tab": "videos",
       "duration": 1444,
+      "availability": null
+    },
+    {
+      "id": "J_MCZ_BaNDc",
+      "title": "公开直播：解密黄仁勋桃色事件",
+      "url": "https://www.youtube.com/watch?v=J_MCZ_BaNDc",
+      "tab": "streams",
+      "duration": null,
       "availability": null
     },
     {
