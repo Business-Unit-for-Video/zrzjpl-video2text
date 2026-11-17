@@ -2,7 +2,7 @@
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "generated_at": "2026-11-16 18:42:15",
+  "generated_at": "2026-11-17 08:07:52",
   "items": [
     {
       "id": "TLt6dW8O7vA",
@@ -706,6 +706,14 @@
       "url": "https://www.youtube.com/watch?v=t1z7O7wd2bk",
       "tab": "videos",
       "duration": 1444,
+      "availability": null
+    },
+    {
+      "id": "9OqbC9xOdQw",
+      "title": "公开直播：袁家军落马了吗？",
+      "url": "https://www.youtube.com/watch?v=9OqbC9xOdQw",
+      "tab": "streams",
+      "duration": null,
       "availability": null
     },
     {

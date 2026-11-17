@@ -1,0 +1,6 @@
+video_id: 9OqbC9xOdQw
+title: 公开直播：袁家军落马了吗？
+url: https://www.youtube.com/watch?v=9OqbC9xOdQw
+tab: streams
+time: 2026-11-17 08:08:11
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/9OqbC9xOdQw.%(ext)s', 'https://www.youtube.com/watch?v=9OqbC9xOdQw'])
