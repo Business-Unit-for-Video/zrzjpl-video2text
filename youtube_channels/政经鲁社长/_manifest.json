@@ -2,7 +2,7 @@
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "generated_at": "2026-11-19 17:27:38",
+  "generated_at": "2026-11-20 07:29:43",
   "items": [
     {
       "id": "TLt6dW8O7vA",
@@ -706,6 +706,14 @@
       "url": "https://www.youtube.com/watch?v=t1z7O7wd2bk",
       "tab": "videos",
       "duration": 1444,
+      "availability": null
+    },
+    {
+      "id": "qD81wCBQqGE",
+      "title": "公开直播：貌合神离的APEC峰会",
+      "url": "https://www.youtube.com/watch?v=qD81wCBQqGE",
+      "tab": "streams",
+      "duration": null,
       "availability": null
     },
     {
