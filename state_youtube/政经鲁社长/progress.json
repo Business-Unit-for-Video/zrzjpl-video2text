@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/qD81wCBQqGE.%(ext)s', 'https://www.youtube.com/watch?v=qD81wCBQqGE'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/9ap0f_ZXzLQ.%(ext)s', 'https://www.youtube.com/watch?v=9ap0f_ZXzLQ'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "queue_total": 156,
-  "queue_index": 89,
-  "updated_at": 1795159799,
-  "updated_at_readable": "2026-11-20 07:29:59",
-  "current_video_id": "qD81wCBQqGE",
-  "current_title": "公开直播：貌合神离的APEC峰会",
-  "current_url": "https://www.youtube.com/watch?v=qD81wCBQqGE",
-  "current_tab": "streams"
+  "queue_total": 157,
+  "queue_index": 1,
+  "updated_at": 1795194223,
+  "updated_at_readable": "2026-11-20 17:03:43",
+  "current_video_id": "9ap0f_ZXzLQ",
+  "current_title": "神秘商人徐京华如何空手套50亿美金和拿下中石化？余秋里与康世恩是如何成为第一代石油帮主？谁是第二代石油帮背后真正的隐形帮主？曾庆红当年为何会选拔习近平？曾庆红｜徐京华｜余秋里｜康世恩｜周永康｜习近平｜",
+  "current_url": "https://www.youtube.com/watch?v=9ap0f_ZXzLQ",
+  "current_tab": "videos"
 }
