@@ -1,0 +1,6 @@
+video_id: FqAuGnpyhRQ
+title: 公开直播：黄仁勋归来的背后--全球金融市场乱纪元
+url: https://www.youtube.com/watch?v=FqAuGnpyhRQ
+tab: streams
+time: 2026-11-24 10:05:23
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/FqAuGnpyhRQ.%(ext)s', 'https://www.youtube.com/watch?v=FqAuGnpyhRQ'])

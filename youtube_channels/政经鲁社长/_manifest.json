@@ -2,7 +2,7 @@
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
-  "generated_at": "2026-11-23 20:21:11",
+  "generated_at": "2026-11-24 10:05:06",
   "items": [
     {
       "id": "9ap0f_ZXzLQ",
@@ -714,6 +714,14 @@
       "url": "https://www.youtube.com/watch?v=t1z7O7wd2bk",
       "tab": "videos",
       "duration": 1444,
+      "availability": null
+    },
+    {
+      "id": "FqAuGnpyhRQ",
+      "title": "公开直播：黄仁勋归来的背后--全球金融市场乱纪元",
+      "url": "https://www.youtube.com/watch?v=FqAuGnpyhRQ",
+      "tab": "streams",
+      "duration": null,
       "availability": null
     },
     {
