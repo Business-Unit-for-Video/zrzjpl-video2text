@@ -1,0 +1,6 @@
+video_id: Ia1TyVLwixc
+title: "当年明月”为什么发疯？陈吉宁和龚正的矛盾；陈吉宁和李强应勇丁薛祥的恩怨如何形成？李强为何能调动中纪委？陈吉宁有哪些失误？上海政治骗子到底跟陈吉宁有没有关系？哪些条件催化了陈吉宁的落马？
+url: https://www.youtube.com/watch?v=Ia1TyVLwixc
+tab: videos
+time: 2026-11-25 18:43:00
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Ia1TyVLwixc.%(ext)s', 'https://www.youtube.com/watch?v=Ia1TyVLwixc'])
