@@ -1,0 +1,6 @@
+video_id: 6NDWmdyFet0
+title: 紧急直播：谁干掉了陈吉宁
+url: https://www.youtube.com/watch?v=6NDWmdyFet0
+tab: streams
+time: 2026-11-25 00:53:36
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/6NDWmdyFet0.%(ext)s', 'https://www.youtube.com/watch?v=6NDWmdyFet0'])
