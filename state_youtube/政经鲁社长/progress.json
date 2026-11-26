@@ -1,15 +1,15 @@
 {
   "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/Ia1TyVLwixc.%(ext)s', 'https://www.youtube.com/watch?v=Ia1TyVLwixc'])",
+  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/isSnTlh3GDg.%(ext)s', 'https://www.youtube.com/watch?v=isSnTlh3GDg'])",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 159,
-  "queue_index": 1,
-  "updated_at": 1795632180,
-  "updated_at_readable": "2026-11-25 18:43:00",
-  "current_video_id": "Ia1TyVLwixc",
-  "current_title": "\"当年明月”为什么发疯？陈吉宁和龚正的矛盾；陈吉宁和李强应勇丁薛祥的恩怨如何形成？李强为何能调动中纪委？陈吉宁有哪些失误？上海政治骗子到底跟陈吉宁有没有关系？哪些条件催化了陈吉宁的落马？",
-  "current_url": "https://www.youtube.com/watch?v=Ia1TyVLwixc",
-  "current_tab": "videos"
+  "queue_index": 91,
+  "updated_at": 1795682207,
+  "updated_at_readable": "2026-11-26 08:36:47",
+  "current_video_id": "isSnTlh3GDg",
+  "current_title": "李希如何留置陈吉宁；习近平为何对陈吉宁失望？陈吉宁和李强的权力之争；陈吉宁和北京公共情妇的关系；陈吉宁背后的上海政治骗子案件；陈太太的商界往事；陈希和清华派系的衰落；陈的道路错在了哪里？|陈吉宁落马",
+  "current_url": "https://www.youtube.com/watch?v=isSnTlh3GDg",
+  "current_tab": "streams"
 }
