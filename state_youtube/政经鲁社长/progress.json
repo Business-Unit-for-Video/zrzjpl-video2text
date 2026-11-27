@@ -1,15 +1,11 @@
 {
-  "status": "finished_with_errors",
-  "note": "CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/zmxgkCHgVxQ.%(ext)s', 'https://www.youtube.com/watch?v=zmxgkCHgVxQ'])",
+  "status": "finished",
+  "note": "all items completed",
   "destination": "政经鲁社长",
   "channel_url": "https://www.youtube.com/@zrzjpl",
   "include_members": false,
   "queue_total": 160,
-  "queue_index": 1,
-  "updated_at": 1795740054,
-  "updated_at_readable": "2026-11-27 00:40:54",
-  "current_video_id": "zmxgkCHgVxQ",
-  "current_title": "习近平为何对陈吉宁失望？陈吉宁和龚正的权力之争；陈吉宁和北京公共情妇的关系；陈吉宁背后的上海政治骗子案件；陈太太的商界往事；陈希和清华派系的衰落；陈的道路错在了哪里？| 陈吉宁落马",
-  "current_url": "https://www.youtube.com/watch?v=zmxgkCHgVxQ",
-  "current_tab": "videos"
+  "queue_index": 160,
+  "updated_at": 1795803427,
+  "updated_at_readable": "2026-11-27 18:17:07"
 }
