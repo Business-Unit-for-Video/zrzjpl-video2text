@@ -1,0 +1,6 @@
+video_id: zmxgkCHgVxQ
+title: 习近平为何对陈吉宁失望？陈吉宁和龚正的权力之争；陈吉宁和北京公共情妇的关系；陈吉宁背后的上海政治骗子案件；陈太太的商界往事；陈希和清华派系的衰落；陈的道路错在了哪里？| 陈吉宁落马
+url: https://www.youtube.com/watch?v=zmxgkCHgVxQ
+tab: videos
+time: 2026-11-27 00:40:54
+error: CalledProcessError(1, ['yt-dlp', '--remote-components', 'ejs:github', '--extractor-args', 'youtube:player_client=android;formats=missing_pot', '--no-playlist', '-f', 'ba/bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', '7', '-o', 'tmp_audio/政经鲁社长/zmxgkCHgVxQ.%(ext)s', 'https://www.youtube.com/watch?v=zmxgkCHgVxQ'])
